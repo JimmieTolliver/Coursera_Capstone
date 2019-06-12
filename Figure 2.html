@@ -1,0 +1,5480 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_a5396a14d09242e2ae1e8b57a59954f5 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_a5396a14d09242e2ae1e8b57a59954f5" ></div>
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script>
+  $( function() {
+    $( "#maplegend" ).draggable({
+                    start: function (event, ui) {
+                        $(this).css({
+                            right: "auto",
+                            top: "auto",
+                            bottom: "auto"
+                        });
+                    }
+                });
+});
+
+  </script>
+</head>
+<body>
+
+ 
+<div id='maplegend' class='maplegend' 
+    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+     border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+     
+<div class='legend-title'>Legend</div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <li><span style='background:#ff0000;opacity:0.7;'></span>Lake View Cluster</li>
+
+    
+  </ul>
+</div>
+</div>
+ 
+</body>
+</html>
+
+<style type='text/css'>
+  .maplegend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .maplegend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .maplegend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .maplegend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+  .maplegend .legend-source {
+    font-size: 80%;
+    color: #777;
+    clear: both;
+    }
+  .maplegend a {
+    color: #777;
+    }
+</style>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_a5396a14d09242e2ae1e8b57a59954f5 = L.map(
+        'map_a5396a14d09242e2ae1e8b57a59954f5', {
+        center: [42.36837, -83.3527097],
+        zoom: 10,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_74290dc2366a453bb11613abf8ce5a92 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+    
+            var circle_marker_08a9abc7d0d24c17b4f6b884670662ef = L.circleMarker(
+                [42.38847535570716, -83.02506532842146],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_540ebd0d070b4ecea06fca209c8523c1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_963a0e4a6aff41d3a2f6432cb4744183 = $(`<div id="html_963a0e4a6aff41d3a2f6432cb4744183" style="width: 100.0%; height: 100.0%;">Airport, Detroit, MI Cluster 3</div>`)[0];
+                popup_540ebd0d070b4ecea06fca209c8523c1.setContent(html_963a0e4a6aff41d3a2f6432cb4744183);
+            
+
+            circle_marker_08a9abc7d0d24c17b4f6b884670662ef.bindPopup(popup_540ebd0d070b4ecea06fca209c8523c1)
+            ;
+
+            
+        
+    
+            var circle_marker_ca189bb5a9b54a64ab199c7d59a3c6b5 = L.circleMarker(
+                [42.422256254204605, -83.17148170414616],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_72ec3952a3cf481fa3818d99f6260ae1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_843ce40dc6ed4db89316a9c0aa5b7fd6 = $(`<div id="html_843ce40dc6ed4db89316a9c0aa5b7fd6" style="width: 100.0%; height: 100.0%;">Bagley, Detroit, MI Cluster 9</div>`)[0];
+                popup_72ec3952a3cf481fa3818d99f6260ae1.setContent(html_843ce40dc6ed4db89316a9c0aa5b7fd6);
+            
+
+            circle_marker_ca189bb5a9b54a64ab199c7d59a3c6b5.bindPopup(popup_72ec3952a3cf481fa3818d99f6260ae1)
+            ;
+
+            
+        
+    
+            var circle_marker_b4a9f98ddac94641b3685b772bcbb1aa = L.circleMarker(
+                [42.264908073003134, -83.16444390584455],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_d3ca8712e52f4ad2a112a4428b3e0e57 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7ab972bf9e034f6eab1b242f8f6baf88 = $(`<div id="html_7ab972bf9e034f6eab1b242f8f6baf88" style="width: 100.0%; height: 100.0%;">Boynton, Detroit, MI Cluster 9</div>`)[0];
+                popup_d3ca8712e52f4ad2a112a4428b3e0e57.setContent(html_7ab972bf9e034f6eab1b242f8f6baf88);
+            
+
+            circle_marker_b4a9f98ddac94641b3685b772bcbb1aa.bindPopup(popup_d3ca8712e52f4ad2a112a4428b3e0e57)
+            ;
+
+            
+        
+    
+            var circle_marker_cf0eaadd1812468d87775cdd110f3741 = L.circleMarker(
+                [42.3845130788046, -83.24895280578424],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_50480317a5c74c8fbbbc7689f4bb1f17 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fa7a0af56f6a408b8949223c1ad2c518 = $(`<div id="html_fa7a0af56f6a408b8949223c1ad2c518" style="width: 100.0%; height: 100.0%;">Brightmoor, Detroit, MI Cluster 9</div>`)[0];
+                popup_50480317a5c74c8fbbbc7689f4bb1f17.setContent(html_fa7a0af56f6a408b8949223c1ad2c518);
+            
+
+            circle_marker_cf0eaadd1812468d87775cdd110f3741.bindPopup(popup_50480317a5c74c8fbbbc7689f4bb1f17)
+            ;
+
+            
+        
+    
+            var circle_marker_7d36a7d31bc74ee2b6e2e454b58b6b28 = L.circleMarker(
+                [42.34482586200902, -83.20447205109404],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_baa2aaaa5a424b05b4ed9ba70a1fcd93 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_75399cfa5cf14a3a95d85f23465c23f2 = $(`<div id="html_75399cfa5cf14a3a95d85f23465c23f2" style="width: 100.0%; height: 100.0%;">Brooks, Detroit, MI Cluster 9</div>`)[0];
+                popup_baa2aaaa5a424b05b4ed9ba70a1fcd93.setContent(html_75399cfa5cf14a3a95d85f23465c23f2);
+            
+
+            circle_marker_7d36a7d31bc74ee2b6e2e454b58b6b28.bindPopup(popup_baa2aaaa5a424b05b4ed9ba70a1fcd93)
+            ;
+
+            
+        
+    
+            var circle_marker_b90e12e18b964abaadf047e8b40ba1f0 = L.circleMarker(
+                [42.42656292570748, -82.97150075187042],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_bbae815af22d40ea88aba45d6871c3f8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_78eaa817cd344d458044fe9564d9f7b3 = $(`<div id="html_78eaa817cd344d458044fe9564d9f7b3" style="width: 100.0%; height: 100.0%;">Burbank, Detroit, MI Cluster 3</div>`)[0];
+                popup_bbae815af22d40ea88aba45d6871c3f8.setContent(html_78eaa817cd344d458044fe9564d9f7b3);
+            
+
+            circle_marker_b90e12e18b964abaadf047e8b40ba1f0.bindPopup(popup_bbae815af22d40ea88aba45d6871c3f8)
+            ;
+
+            
+        
+    
+            var circle_marker_50279a6e8e8d4102bc8a7d1cb795772c = L.circleMarker(
+                [42.3521880122217, -83.01344053321525],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_ff0a981921d3419a86a29a46aafd5d00 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_079460de96f9450b88c90da67552be4f = $(`<div id="html_079460de96f9450b88c90da67552be4f" style="width: 100.0%; height: 100.0%;">Butzel, Detroit, MI Cluster 4</div>`)[0];
+                popup_ff0a981921d3419a86a29a46aafd5d00.setContent(html_079460de96f9450b88c90da67552be4f);
+            
+
+            circle_marker_50279a6e8e8d4102bc8a7d1cb795772c.bindPopup(popup_ff0a981921d3419a86a29a46aafd5d00)
+            ;
+
+            
+        
+    
+            var circle_marker_c90cbe7e18914bb5a0a5039a82c23fd7 = L.circleMarker(
+                [42.32859250237113, -83.06174405502571],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_eaa8ea0f6c004367b8b450eb23d5afac = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d0e69ac5ccbe4fdf82bc5ed23a5fc7d9 = $(`<div id="html_d0e69ac5ccbe4fdf82bc5ed23a5fc7d9" style="width: 100.0%; height: 100.0%;">Central Business District, Detroit, MI Cluster 1</div>`)[0];
+                popup_eaa8ea0f6c004367b8b450eb23d5afac.setContent(html_d0e69ac5ccbe4fdf82bc5ed23a5fc7d9);
+            
+
+            circle_marker_c90cbe7e18914bb5a0a5039a82c23fd7.bindPopup(popup_eaa8ea0f6c004367b8b450eb23d5afac)
+            ;
+
+            
+        
+    
+            var circle_marker_7bfd7a43c51447c6a0dc68af013d5335 = L.circleMarker(
+                [42.38812040569523, -83.20618908830009],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_7cd07af899ff4959a80587844d0d2e0e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0b760e3484974eceb9d093e072340fae = $(`<div id="html_0b760e3484974eceb9d093e072340fae" style="width: 100.0%; height: 100.0%;">Cerveny / Grandmont, Detroit, MI Cluster 9</div>`)[0];
+                popup_7cd07af899ff4959a80587844d0d2e0e.setContent(html_0b760e3484974eceb9d093e072340fae);
+            
+
+            circle_marker_7bfd7a43c51447c6a0dc68af013d5335.bindPopup(popup_7cd07af899ff4959a80587844d0d2e0e)
+            ;
+
+            
+        
+    
+            var circle_marker_8b7e50ca30804560866fcdc52a4ebb47 = L.circleMarker(
+                [42.32563747203774, -83.1359440659092],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_69bd5812c4f44f7f88d363b8e7071f7e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_39839c7fa4fc4438a044c9c929d69766 = $(`<div id="html_39839c7fa4fc4438a044c9c929d69766" style="width: 100.0%; height: 100.0%;">Chadsey, Detroit, MI Cluster 7</div>`)[0];
+                popup_69bd5812c4f44f7f88d363b8e7071f7e.setContent(html_39839c7fa4fc4438a044c9c929d69766);
+            
+
+            circle_marker_8b7e50ca30804560866fcdc52a4ebb47.bindPopup(popup_69bd5812c4f44f7f88d363b8e7071f7e)
+            ;
+
+            
+        
+    
+            var circle_marker_dbea5c734d0a4523b33a318294eb7b2f = L.circleMarker(
+                [42.38846297002472, -82.97131452539215],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_6460b4147e9c445c85d412544a4981f8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6dd1645b118246ba9440f86059c64e1e = $(`<div id="html_6dd1645b118246ba9440f86059c64e1e" style="width: 100.0%; height: 100.0%;">Chandler Park, Detroit, MI Cluster 9</div>`)[0];
+                popup_6460b4147e9c445c85d412544a4981f8.setContent(html_6dd1645b118246ba9440f86059c64e1e);
+            
+
+            circle_marker_dbea5c734d0a4523b33a318294eb7b2f.bindPopup(popup_6460b4147e9c445c85d412544a4981f8)
+            ;
+
+            
+        
+    
+            var circle_marker_6868d3fe5c3d4b1980d68cf88d2b8bb0 = L.circleMarker(
+                [42.36192338292417, -83.24891303907945],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_041a530417f2451fbfc7fb8dad696ea4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_61a760bc7c86467894a9b4da21d088d0 = $(`<div id="html_61a760bc7c86467894a9b4da21d088d0" style="width: 100.0%; height: 100.0%;">Cody, Detroit, MI Cluster 4</div>`)[0];
+                popup_041a530417f2451fbfc7fb8dad696ea4.setContent(html_61a760bc7c86467894a9b4da21d088d0);
+            
+
+            circle_marker_6868d3fe5c3d4b1980d68cf88d2b8bb0.bindPopup(popup_041a530417f2451fbfc7fb8dad696ea4)
+            ;
+
+            
+        
+    
+            var circle_marker_3552731d4f064503b1d57caa1a01fe88 = L.circleMarker(
+                [42.33011335857635, -83.09799749633893],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_3643c04dbe084b9fbcae49769e5379b4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0cda7665366f424581f9405eff3f5579 = $(`<div id="html_0cda7665366f424581f9405eff3f5579" style="width: 100.0%; height: 100.0%;">Condon, Detroit, MI Cluster 8</div>`)[0];
+                popup_3643c04dbe084b9fbcae49769e5379b4.setContent(html_0cda7665366f424581f9405eff3f5579);
+            
+
+            circle_marker_3552731d4f064503b1d57caa1a01fe88.bindPopup(popup_3643c04dbe084b9fbcae49769e5379b4)
+            ;
+
+            
+        
+    
+            var circle_marker_ed5b394e3dbf4c648f0d0d593d506a0f = L.circleMarker(
+                [42.40681016291418, -82.99332376214888],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_31dc4b88c41849c3b96e3f8c1e1abe6f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3220cabb0d5e40c78de1ba6e4bb4be1a = $(`<div id="html_3220cabb0d5e40c78de1ba6e4bb4be1a" style="width: 100.0%; height: 100.0%;">Conner, Detroit, MI Cluster 3</div>`)[0];
+                popup_31dc4b88c41849c3b96e3f8c1e1abe6f.setContent(html_3220cabb0d5e40c78de1ba6e4bb4be1a);
+            
+
+            circle_marker_ed5b394e3dbf4c648f0d0d593d506a0f.bindPopup(popup_31dc4b88c41849c3b96e3f8c1e1abe6f)
+            ;
+
+            
+        
+    
+            var circle_marker_c65be495b6604d2a8e575164e4fe860e = L.circleMarker(
+                [42.325915108133685, -83.08040055104817],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_ed9ef1bf660149ad9b1fe96085e7da74 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_934ed80999a5431aaf80e30d5b687452 = $(`<div id="html_934ed80999a5431aaf80e30d5b687452" style="width: 100.0%; height: 100.0%;">Corktown, Detroit, MI Cluster 8</div>`)[0];
+                popup_ed9ef1bf660149ad9b1fe96085e7da74.setContent(html_934ed80999a5431aaf80e30d5b687452);
+            
+
+            circle_marker_c65be495b6604d2a8e575164e4fe860e.bindPopup(popup_ed9ef1bf660149ad9b1fe96085e7da74)
+            ;
+
+            
+        
+    
+            var circle_marker_556273f19482469094033d85703a1dab = L.circleMarker(
+                [42.40645563930423, -83.0621264248346],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_d0ebc6f7959741a2b60f8459af306df4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b9f84468318c4539b5be34b55a675f5c = $(`<div id="html_b9f84468318c4539b5be34b55a675f5c" style="width: 100.0%; height: 100.0%;">Davison, Detroit, MI Cluster 6</div>`)[0];
+                popup_d0ebc6f7959741a2b60f8459af306df4.setContent(html_b9f84468318c4539b5be34b55a675f5c);
+            
+
+            circle_marker_556273f19482469094033d85703a1dab.bindPopup(popup_d0ebc6f7959741a2b60f8459af306df4)
+            ;
+
+            
+        
+    
+            var circle_marker_aa70c22909ff47cc8e45c084a4229900 = L.circleMarker(
+                [42.40998407734617, -82.95453928918496],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_70016f9644614155a9b6f426ef7112f1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eae477f132d4496692edcec9dcc8dc11 = $(`<div id="html_eae477f132d4496692edcec9dcc8dc11" style="width: 100.0%; height: 100.0%;">Denby, Detroit, MI Cluster 9</div>`)[0];
+                popup_70016f9644614155a9b6f426ef7112f1.setContent(html_eae477f132d4496692edcec9dcc8dc11);
+            
+
+            circle_marker_aa70c22909ff47cc8e45c084a4229900.bindPopup(popup_70016f9644614155a9b6f426ef7112f1)
+            ;
+
+            
+        
+    
+            var circle_marker_b30bab62da0247f9beb5c8cd36c4bcc4 = L.circleMarker(
+                [42.37924785130312, -83.11116001499806],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_6f8843636258406e9e920a73eb712d66 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_49a1776afec44ea1b2a43a3299aeeb8a = $(`<div id="html_49a1776afec44ea1b2a43a3299aeeb8a" style="width: 100.0%; height: 100.0%;">Durfee, Detroit, MI Cluster 9</div>`)[0];
+                popup_6f8843636258406e9e920a73eb712d66.setContent(html_49a1776afec44ea1b2a43a3299aeeb8a);
+            
+
+            circle_marker_b30bab62da0247f9beb5c8cd36c4bcc4.bindPopup(popup_6f8843636258406e9e920a73eb712d66)
+            ;
+
+            
+        
+    
+            var circle_marker_01e060060895420f9e5522382798d4b2 = L.circleMarker(
+                [42.359713634768404, -82.95903868810996],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_7e5d4bc48e334f7f9bd8074aa828b255 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f0dfd021f2be498981a7c26456a54286 = $(`<div id="html_f0dfd021f2be498981a7c26456a54286" style="width: 100.0%; height: 100.0%;">East Riverside, Detroit, MI Cluster 4</div>`)[0];
+                popup_7e5d4bc48e334f7f9bd8074aa828b255.setContent(html_f0dfd021f2be498981a7c26456a54286);
+            
+
+            circle_marker_01e060060895420f9e5522382798d4b2.bindPopup(popup_7e5d4bc48e334f7f9bd8074aa828b255)
+            ;
+
+            
+        
+    
+            var circle_marker_19dc29125bbb464eb73a362e5c869958 = L.circleMarker(
+                [42.41522044987588, -83.24009984509534],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_3ca60a34e5cb447ab3f523f21755fb88 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_76439456c61742de9dfafe7a986b565f = $(`<div id="html_76439456c61742de9dfafe7a986b565f" style="width: 100.0%; height: 100.0%;">Evergreen, Detroit, MI Cluster 3</div>`)[0];
+                popup_3ca60a34e5cb447ab3f523f21755fb88.setContent(html_76439456c61742de9dfafe7a986b565f);
+            
+
+            circle_marker_19dc29125bbb464eb73a362e5c869958.bindPopup(popup_3ca60a34e5cb447ab3f523f21755fb88)
+            ;
+
+            
+        
+    
+            var circle_marker_ac56cdca567c4cae91ba79b0a46c4d1f = L.circleMarker(
+                [42.395940769257926, -82.93329007304649],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_9645378794794e19b49c79b9e1c8281f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ebc97317545d4f07a8051bb9ec08e0e2 = $(`<div id="html_ebc97317545d4f07a8051bb9ec08e0e2" style="width: 100.0%; height: 100.0%;">Finney, Detroit, MI Cluster 4</div>`)[0];
+                popup_9645378794794e19b49c79b9e1c8281f.setContent(html_ebc97317545d4f07a8051bb9ec08e0e2);
+            
+
+            circle_marker_ac56cdca567c4cae91ba79b0a46c4d1f.bindPopup(popup_9645378794794e19b49c79b9e1c8281f)
+            ;
+
+            
+        
+    
+            var circle_marker_fa5c5fd81f8e445e8d3bdfedd67217a8 = L.circleMarker(
+                [42.42657349828315, -83.03574439648058],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_aaa6c3f28a5d4ba3b6eeb03c838753b3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2f259a8458ae4149be9e3b49d507f1e5 = $(`<div id="html_2f259a8458ae4149be9e3b49d507f1e5" style="width: 100.0%; height: 100.0%;">Grant, Detroit, MI Cluster 9</div>`)[0];
+                popup_aaa6c3f28a5d4ba3b6eeb03c838753b3.setContent(html_2f259a8458ae4149be9e3b49d507f1e5);
+            
+
+            circle_marker_fa5c5fd81f8e445e8d3bdfedd67217a8.bindPopup(popup_aaa6c3f28a5d4ba3b6eeb03c838753b3)
+            ;
+
+            
+        
+    
+            var circle_marker_451fa31c67ac457b97667f22c088781e = L.circleMarker(
+                [42.422745778941085, -83.20706673104549],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_67bfd4452ad144f8bc8a774a637fca4d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6155a2b420ff42268d8cd4681594e742 = $(`<div id="html_6155a2b420ff42268d8cd4681594e742" style="width: 100.0%; height: 100.0%;">Greenfield, Detroit, MI Cluster 9</div>`)[0];
+                popup_67bfd4452ad144f8bc8a774a637fca4d.setContent(html_6155a2b420ff42268d8cd4681594e742);
+            
+
+            circle_marker_451fa31c67ac457b97667f22c088781e.bindPopup(popup_67bfd4452ad144f8bc8a774a637fca4d)
+            ;
+
+            
+        
+    
+            var circle_marker_0437886e83924acb8cfb989a886e4c0f = L.circleMarker(
+                [42.39571305740821, -83.16279566566793],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_edd4ab4a56c646e18fe69e0719f88969 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d27e71d57370447898a2dd6b34a4dba3 = $(`<div id="html_d27e71d57370447898a2dd6b34a4dba3" style="width: 100.0%; height: 100.0%;">Harmony Village, Detroit, MI Cluster 3</div>`)[0];
+                popup_edd4ab4a56c646e18fe69e0719f88969.setContent(html_d27e71d57370447898a2dd6b34a4dba3);
+            
+
+            circle_marker_0437886e83924acb8cfb989a886e4c0f.bindPopup(popup_edd4ab4a56c646e18fe69e0719f88969)
+            ;
+
+            
+        
+    
+            var circle_marker_6eaa8f974c4345f8be5ddb251403ffd6 = L.circleMarker(
+                [42.323889119124516, -83.08287733988327],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_12645deeb6a4461da1845dea30003af1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f3f4515b0637425eac313f7d3d7f8ceb = $(`<div id="html_f3f4515b0637425eac313f7d3d7f8ceb" style="width: 100.0%; height: 100.0%;">Hubbard Richard, Detroit, MI Cluster 8</div>`)[0];
+                popup_12645deeb6a4461da1845dea30003af1.setContent(html_f3f4515b0637425eac313f7d3d7f8ceb);
+            
+
+            circle_marker_6eaa8f974c4345f8be5ddb251403ffd6.bindPopup(popup_12645deeb6a4461da1845dea30003af1)
+            ;
+
+            
+        
+    
+            var circle_marker_c3f47ec5d0ca4625ae420a69099b2928 = L.circleMarker(
+                [42.353901327891144, -82.98871693199649],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_7f8eb9d7b4d84cc6a433a87b592f3f4e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b609470d24a34839a3c81b9d78e369d3 = $(`<div id="html_b609470d24a34839a3c81b9d78e369d3" style="width: 100.0%; height: 100.0%;">Indian Village, Detroit, MI Cluster 4</div>`)[0];
+                popup_7f8eb9d7b4d84cc6a433a87b592f3f4e.setContent(html_b609470d24a34839a3c81b9d78e369d3);
+            
+
+            circle_marker_c3f47ec5d0ca4625ae420a69099b2928.bindPopup(popup_7f8eb9d7b4d84cc6a433a87b592f3f4e)
+            ;
+
+            
+        
+    
+            var circle_marker_2875850d510e4c7483f82a83139ef651 = L.circleMarker(
+                [42.37521459270459, -82.95619787613894],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_e3694d5ff09a4038875faffc78c1c1a6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aa968f663df64cb19d98ba826d60ff85 = $(`<div id="html_aa968f663df64cb19d98ba826d60ff85" style="width: 100.0%; height: 100.0%;">Jefferson / Mack, Detroit, MI Cluster 3</div>`)[0];
+                popup_e3694d5ff09a4038875faffc78c1c1a6.setContent(html_aa968f663df64cb19d98ba826d60ff85);
+            
+
+            circle_marker_2875850d510e4c7483f82a83139ef651.bindPopup(popup_e3694d5ff09a4038875faffc78c1c1a6)
+            ;
+
+            
+        
+    
+            var circle_marker_2deaf668b4274391885146d88a01c094 = L.circleMarker(
+                [42.33551032163443, -83.08279823932583],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_aeda63e0f1a74aa8aa1ecd67d2529ea5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_00f7299bb099492bab0e7a94d6ecd8dd = $(`<div id="html_00f7299bb099492bab0e7a94d6ecd8dd" style="width: 100.0%; height: 100.0%;">Jeffries, Detroit, MI Cluster 9</div>`)[0];
+                popup_aeda63e0f1a74aa8aa1ecd67d2529ea5.setContent(html_00f7299bb099492bab0e7a94d6ecd8dd);
+            
+
+            circle_marker_2deaf668b4274391885146d88a01c094.bindPopup(popup_aeda63e0f1a74aa8aa1ecd67d2529ea5)
+            ;
+
+            
+        
+    
+            var circle_marker_cfc458cd319c4c0ebb766382f817717b = L.circleMarker(
+                [42.37105621640783, -83.02142846076126],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_c650360768cc469a811da2b6172f8224 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6d7511487b444df98423b71d289e118e = $(`<div id="html_6d7511487b444df98423b71d289e118e" style="width: 100.0%; height: 100.0%;">Kettering, Detroit, MI Cluster 3</div>`)[0];
+                popup_c650360768cc469a811da2b6172f8224.setContent(html_6d7511487b444df98423b71d289e118e);
+            
+
+            circle_marker_cfc458cd319c4c0ebb766382f817717b.bindPopup(popup_c650360768cc469a811da2b6172f8224)
+            ;
+
+            
+        
+    
+            var circle_marker_416420115b8e4f96957d5923108c01c3 = L.circleMarker(
+                [42.33968812309469, -83.02993927324133],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_dd18d40a678a47e8b930007267852d1c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3cccb5b6f83049d0acd9dd0f2608009f = $(`<div id="html_3cccb5b6f83049d0acd9dd0f2608009f" style="width: 100.0%; height: 100.0%;">Lower East Central, Detroit, MI Cluster 4</div>`)[0];
+                popup_dd18d40a678a47e8b930007267852d1c.setContent(html_3cccb5b6f83049d0acd9dd0f2608009f);
+            
+
+            circle_marker_416420115b8e4f96957d5923108c01c3.bindPopup(popup_dd18d40a678a47e8b930007267852d1c)
+            ;
+
+            
+        
+    
+            var circle_marker_3db005d3ade3409fa34b1a9a3cb1da20 = L.circleMarker(
+                [42.3438028604799, -83.06387264068579],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_4118f74d7eb046bb9436720927000e56 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d957e90126884256bdcc807be0c61978 = $(`<div id="html_d957e90126884256bdcc807be0c61978" style="width: 100.0%; height: 100.0%;">Lower Woodward, Detroit, MI Cluster 3</div>`)[0];
+                popup_4118f74d7eb046bb9436720927000e56.setContent(html_d957e90126884256bdcc807be0c61978);
+            
+
+            circle_marker_3db005d3ade3409fa34b1a9a3cb1da20.bindPopup(popup_4118f74d7eb046bb9436720927000e56)
+            ;
+
+            
+        
+    
+            var circle_marker_ffb5125662e74347a9e613c21599e32b = L.circleMarker(
+                [42.36623493874102, -83.16021629691245],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_68e24a95d41e44cc9c52e0c4fbd54b46 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c978f17d8b7543deaefe086add26454d = $(`<div id="html_c978f17d8b7543deaefe086add26454d" style="width: 100.0%; height: 100.0%;">Mackenzie, Detroit, MI Cluster 3</div>`)[0];
+                popup_68e24a95d41e44cc9c52e0c4fbd54b46.setContent(html_c978f17d8b7543deaefe086add26454d);
+            
+
+            circle_marker_ffb5125662e74347a9e613c21599e32b.bindPopup(popup_68e24a95d41e44cc9c52e0c4fbd54b46)
+            ;
+
+            
+        
+    
+            var circle_marker_1d9f00bb61c34c459676c32a1abacec7 = L.circleMarker(
+                [42.40207666567651, -83.13527991040847],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_bece778b82bc44478680e38fe1fa7536 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_24a1a55d2256440198bcaf9894bf37a0 = $(`<div id="html_24a1a55d2256440198bcaf9894bf37a0" style="width: 100.0%; height: 100.0%;">McNichols, Detroit, MI Cluster 3</div>`)[0];
+                popup_bece778b82bc44478680e38fe1fa7536.setContent(html_24a1a55d2256440198bcaf9894bf37a0);
+            
+
+            circle_marker_1d9f00bb61c34c459676c32a1abacec7.bindPopup(popup_bece778b82bc44478680e38fe1fa7536)
+            ;
+
+            
+        
+    
+            var circle_marker_51ae003ac7914c4c928daeb2cd293bbd = L.circleMarker(
+                [42.35000705044356, -83.03633406080846],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_ca7644a1fcdd43a69b3db68c012140f8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c3c698b6e92747e0980c9aa1610a942e = $(`<div id="html_c3c698b6e92747e0980c9aa1610a942e" style="width: 100.0%; height: 100.0%;">Middle East Central, Detroit, MI Cluster 9</div>`)[0];
+                popup_ca7644a1fcdd43a69b3db68c012140f8.setContent(html_c3c698b6e92747e0980c9aa1610a942e);
+            
+
+            circle_marker_51ae003ac7914c4c928daeb2cd293bbd.bindPopup(popup_ca7644a1fcdd43a69b3db68c012140f8)
+            ;
+
+            
+        
+    
+            var circle_marker_5edbe4e40c2340ffbe5a372d12cf7bfb = L.circleMarker(
+                [42.37270803399515, -83.08444304947015],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_9082da16afd14065baa42522c0c903e4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_06b7dab707f14185bc7b7688fe333a2d = $(`<div id="html_06b7dab707f14185bc7b7688fe333a2d" style="width: 100.0%; height: 100.0%;">Middle Woodward, Detroit, MI Cluster 4</div>`)[0];
+                popup_9082da16afd14065baa42522c0c903e4.setContent(html_06b7dab707f14185bc7b7688fe333a2d);
+            
+
+            circle_marker_5edbe4e40c2340ffbe5a372d12cf7bfb.bindPopup(popup_9082da16afd14065baa42522c0c903e4)
+            ;
+
+            
+        
+    
+            var circle_marker_f27458685a454f6ca69c79eecd5291d5 = L.circleMarker(
+                [42.42902984490568, -82.98564555361757],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_e9d40d8695054e219561131b18150028 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_96e0cb90f7cf4f6086e87350b26e10fc = $(`<div id="html_96e0cb90f7cf4f6086e87350b26e10fc" style="width: 100.0%; height: 100.0%;">Mt. Olivet, Detroit, MI Cluster 9</div>`)[0];
+                popup_e9d40d8695054e219561131b18150028.setContent(html_96e0cb90f7cf4f6086e87350b26e10fc);
+            
+
+            circle_marker_f27458685a454f6ca69c79eecd5291d5.bindPopup(popup_e9d40d8695054e219561131b18150028)
+            ;
+
+            
+        
+    
+            var circle_marker_f83cd0191bdf413d9ea0670b97795d5a = L.circleMarker(
+                [42.34200607349625, -83.01401773655128],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_2a96efed68524aa28c8603bca6b7f7a0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_48804215a9504075b3eaced10856305e = $(`<div id="html_48804215a9504075b3eaced10856305e" style="width: 100.0%; height: 100.0%;">Near East Riverfront, Detroit, MI Cluster 9</div>`)[0];
+                popup_2a96efed68524aa28c8603bca6b7f7a0.setContent(html_48804215a9504075b3eaced10856305e);
+            
+
+            circle_marker_f83cd0191bdf413d9ea0670b97795d5a.bindPopup(popup_2a96efed68524aa28c8603bca6b7f7a0)
+            ;
+
+            
+        
+    
+            var circle_marker_5c63f82a4c8640e7bec484d5a61ea48f = L.circleMarker(
+                [42.42595272794895, -83.09086920292786],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_937a6146ed804f00a278aa61e4472dc1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c84487b3d1c74d08a688f62dc2c7b608 = $(`<div id="html_c84487b3d1c74d08a688f62dc2c7b608" style="width: 100.0%; height: 100.0%;">Nolan, Detroit, MI Cluster 4</div>`)[0];
+                popup_937a6146ed804f00a278aa61e4472dc1.setContent(html_c84487b3d1c74d08a688f62dc2c7b608);
+            
+
+            circle_marker_5c63f82a4c8640e7bec484d5a61ea48f.bindPopup(popup_937a6146ed804f00a278aa61e4472dc1)
+            ;
+
+            
+        
+    
+            var circle_marker_80a4e3bce58c4fbe9d14a04aa0052436 = L.circleMarker(
+                [42.426426595537336, -83.13270319976884],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_d69f3f258f3149fea28a55e7c5b85a82 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b89760b3a06c48bb95a4edf65631a9c7 = $(`<div id="html_b89760b3a06c48bb95a4edf65631a9c7" style="width: 100.0%; height: 100.0%;">Palmer Park, Detroit, MI Cluster 4</div>`)[0];
+                popup_d69f3f258f3149fea28a55e7c5b85a82.setContent(html_b89760b3a06c48bb95a4edf65631a9c7);
+            
+
+            circle_marker_80a4e3bce58c4fbe9d14a04aa0052436.bindPopup(popup_d69f3f258f3149fea28a55e7c5b85a82)
+            ;
+
+            
+        
+    
+            var circle_marker_4085054c0b7b480fa857223d233b7763 = L.circleMarker(
+                [42.43253435058627, -83.17369441282547],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_9eb709052f6746e184e0732fe271c3eb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_506a969bf71a49aa8cacd72434930884 = $(`<div id="html_506a969bf71a49aa8cacd72434930884" style="width: 100.0%; height: 100.0%;">Pembroke, Detroit, MI Cluster 4</div>`)[0];
+                popup_9eb709052f6746e184e0732fe271c3eb.setContent(html_506a969bf71a49aa8cacd72434930884);
+            
+
+            circle_marker_4085054c0b7b480fa857223d233b7763.bindPopup(popup_9eb709052f6746e184e0732fe271c3eb)
+            ;
+
+            
+        
+    
+            var circle_marker_49694ac676b244db8b3bfa7a03528c2a = L.circleMarker(
+                [42.35643697848519, -83.10952149717102],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_5fb4a12cd4cd4d30a20142c411040da6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ff9fc9dd0c1142c587dc644bf8cf7f4d = $(`<div id="html_ff9fc9dd0c1142c587dc644bf8cf7f4d" style="width: 100.0%; height: 100.0%;">Rosa Parks, Detroit, MI Cluster 3</div>`)[0];
+                popup_5fb4a12cd4cd4d30a20142c411040da6.setContent(html_ff9fc9dd0c1142c587dc644bf8cf7f4d);
+            
+
+            circle_marker_49694ac676b244db8b3bfa7a03528c2a.bindPopup(popup_5fb4a12cd4cd4d30a20142c411040da6)
+            ;
+
+            
+        
+    
+            var circle_marker_3d4a0ef8204f4be28989516d0fc69b25 = L.circleMarker(
+                [42.39864437667881, -83.23882971875064],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_efc300284a2e49f0ac9dfcc989646494 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4493535d7ef24e00b3c29a4323b15766 = $(`<div id="html_4493535d7ef24e00b3c29a4323b15766" style="width: 100.0%; height: 100.0%;">Rosedale, Detroit, MI Cluster 4</div>`)[0];
+                popup_efc300284a2e49f0ac9dfcc989646494.setContent(html_4493535d7ef24e00b3c29a4323b15766);
+            
+
+            circle_marker_3d4a0ef8204f4be28989516d0fc69b25.bindPopup(popup_efc300284a2e49f0ac9dfcc989646494)
+            ;
+
+            
+        
+    
+            var circle_marker_f111ca5852df41b69c18312b15faca07 = L.circleMarker(
+                [42.33701223719031, -83.23920198986775],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_e0f25cde8b3a460083dcfc38891e29c7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7bd76c3f8b2a404ea88e825143fc135e = $(`<div id="html_7bd76c3f8b2a404ea88e825143fc135e" style="width: 100.0%; height: 100.0%;">Rouge, Detroit, MI Cluster 5</div>`)[0];
+                popup_e0f25cde8b3a460083dcfc38891e29c7.setContent(html_7bd76c3f8b2a404ea88e825143fc135e);
+            
+
+            circle_marker_f111ca5852df41b69c18312b15faca07.bindPopup(popup_e0f25cde8b3a460083dcfc38891e29c7)
+            ;
+
+            
+        
+    
+            var circle_marker_aa69e3f391a44921887a6260199dbcc7 = L.circleMarker(
+                [42.300935880786554, -83.14116456528909],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_57684134ba6a4174a5bf3f802e107b03 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1f4136ce514946bf8afcd59624213938 = $(`<div id="html_1f4136ce514946bf8afcd59624213938" style="width: 100.0%; height: 100.0%;">Springwells, Detroit, MI Cluster 0</div>`)[0];
+                popup_57684134ba6a4174a5bf3f802e107b03.setContent(html_1f4136ce514946bf8afcd59624213938);
+            
+
+            circle_marker_aa69e3f391a44921887a6260199dbcc7.bindPopup(popup_57684134ba6a4174a5bf3f802e107b03)
+            ;
+
+            
+        
+    
+            var circle_marker_4e7099e7f76f4d5c93a638b969016bcc = L.circleMarker(
+                [42.43180628098061, -83.11507821941615],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_41f2bf1ee0824d6ab4efd092ba11a465 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1c35ede6911b4e31ba8384f9faf01f12 = $(`<div id="html_1c35ede6911b4e31ba8384f9faf01f12" style="width: 100.0%; height: 100.0%;">State Fair, Detroit, MI Cluster 4</div>`)[0];
+                popup_41f2bf1ee0824d6ab4efd092ba11a465.setContent(html_1c35ede6911b4e31ba8384f9faf01f12);
+            
+
+            circle_marker_4e7099e7f76f4d5c93a638b969016bcc.bindPopup(popup_41f2bf1ee0824d6ab4efd092ba11a465)
+            ;
+
+            
+        
+    
+            var circle_marker_3c3648d3944b43e18d9e39d2b77945e6 = L.circleMarker(
+                [42.34956689393537, -83.13583935239461],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_09cecec8a68b49238adfdb996974b762 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c0aed60633da49b7af542beba82afb08 = $(`<div id="html_c0aed60633da49b7af542beba82afb08" style="width: 100.0%; height: 100.0%;">Tireman, Detroit, MI Cluster 3</div>`)[0];
+                popup_09cecec8a68b49238adfdb996974b762.setContent(html_c0aed60633da49b7af542beba82afb08);
+            
+
+            circle_marker_3c3648d3944b43e18d9e39d2b77945e6.bindPopup(popup_09cecec8a68b49238adfdb996974b762)
+            ;
+
+            
+        
+    
+            var circle_marker_a72315497454423687ed5f03281534d8 = L.circleMarker(
+                [42.3732673957539, -83.05835540832577],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_9620a7bab7634ad8a0db7c1b987f5ef6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f69f2d742328444aa4c83d39e0a77d57 = $(`<div id="html_f69f2d742328444aa4c83d39e0a77d57" style="width: 100.0%; height: 100.0%;">Upper East Central, Detroit, MI Cluster 4</div>`)[0];
+                popup_9620a7bab7634ad8a0db7c1b987f5ef6.setContent(html_f69f2d742328444aa4c83d39e0a77d57);
+            
+
+            circle_marker_a72315497454423687ed5f03281534d8.bindPopup(popup_9620a7bab7634ad8a0db7c1b987f5ef6)
+            ;
+
+            
+        
+    
+            var circle_marker_9fc60fc3e3fc438680f0bc88c0ed8fff = L.circleMarker(
+                [42.30954632363912, -83.11269253403343],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_203651cf416c405f8cd44ba36f36c729 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5128194164fb40ff91814cf54ff85ab4 = $(`<div id="html_5128194164fb40ff91814cf54ff85ab4" style="width: 100.0%; height: 100.0%;">Vernor / Junction, Detroit, MI Cluster 7</div>`)[0];
+                popup_203651cf416c405f8cd44ba36f36c729.setContent(html_5128194164fb40ff91814cf54ff85ab4);
+            
+
+            circle_marker_9fc60fc3e3fc438680f0bc88c0ed8fff.bindPopup(popup_203651cf416c405f8cd44ba36f36c729)
+            ;
+
+            
+        
+    
+            var circle_marker_96a112904ff947bc8b3f2e6354e833a2 = L.circleMarker(
+                [42.289611911662526, -83.12387774826315],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_1dcb8482e05848f7886306e7a6c018c2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3a683ed68dea498b91a9cf4991f87145 = $(`<div id="html_3a683ed68dea498b91a9cf4991f87145" style="width: 100.0%; height: 100.0%;">West Riverfront, Detroit, MI Cluster 7</div>`)[0];
+                popup_1dcb8482e05848f7886306e7a6c018c2.setContent(html_3a683ed68dea498b91a9cf4991f87145);
+            
+
+            circle_marker_96a112904ff947bc8b3f2e6354e833a2.bindPopup(popup_1dcb8482e05848f7886306e7a6c018c2)
+            ;
+
+            
+        
+    
+            var circle_marker_b489eae5f82749c6b7ab4e5c13f032fa = L.circleMarker(
+                [42.375186626569636, -83.14161133287907],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_c73b817892ed44ba9febe8784c3dad03 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9fcdbae6969f44b389e7ecc86d34b3df = $(`<div id="html_9fcdbae6969f44b389e7ecc86d34b3df" style="width: 100.0%; height: 100.0%;">Winterhalter, Detroit, MI Cluster 4</div>`)[0];
+                popup_c73b817892ed44ba9febe8784c3dad03.setContent(html_9fcdbae6969f44b389e7ecc86d34b3df);
+            
+
+            circle_marker_b489eae5f82749c6b7ab4e5c13f032fa.bindPopup(popup_c73b817892ed44ba9febe8784c3dad03)
+            ;
+
+            
+        
+    
+            var circle_marker_5ef3566af46e46b9878caeb9b4ecd037 = L.circleMarker(
+                [42.3799373723587, -82.98598920198904],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_1d181fa9e4ed4fd78165a53645769e72 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e367ccb97cbb4b91b19505027cf3d794 = $(`<div id="html_e367ccb97cbb4b91b19505027cf3d794" style="width: 100.0%; height: 100.0%;">St. Jean, Detroit, MI Cluster 9</div>`)[0];
+                popup_1d181fa9e4ed4fd78165a53645769e72.setContent(html_e367ccb97cbb4b91b19505027cf3d794);
+            
+
+            circle_marker_5ef3566af46e46b9878caeb9b4ecd037.bindPopup(popup_1d181fa9e4ed4fd78165a53645769e72)
+            ;
+
+            
+        
+    
+            var circle_marker_af288f6b015340bb9ba73314c3ac8748 = L.circleMarker(
+                [42.36732680523996, -82.98903802063333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_6fc4790c35be4871a73881950ee87ede = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6b01d5cfee844d439c88c316bedf88cc = $(`<div id="html_6b01d5cfee844d439c88c316bedf88cc" style="width: 100.0%; height: 100.0%;">Foch, Detroit, MI Cluster 9</div>`)[0];
+                popup_6fc4790c35be4871a73881950ee87ede.setContent(html_6b01d5cfee844d439c88c316bedf88cc);
+            
+
+            circle_marker_af288f6b015340bb9ba73314c3ac8748.bindPopup(popup_6fc4790c35be4871a73881950ee87ede)
+            ;
+
+            
+        
+    
+            var circle_marker_607cd7ea06c34ecb98d1266872ce6c18 = L.circleMarker(
+                [42.42712643891082, -83.26575545838212],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_baabcfb2aa1e445388b690e21f0ea3bd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4e6cbcfac5f9474fbd31b8abad48d51b = $(`<div id="html_4e6cbcfac5f9474fbd31b8abad48d51b" style="width: 100.0%; height: 100.0%;">Redford, Detroit, MI Cluster 3</div>`)[0];
+                popup_baabcfb2aa1e445388b690e21f0ea3bd.setContent(html_4e6cbcfac5f9474fbd31b8abad48d51b);
+            
+
+            circle_marker_607cd7ea06c34ecb98d1266872ce6c18.bindPopup(popup_baabcfb2aa1e445388b690e21f0ea3bd)
+            ;
+
+            
+        
+    
+            var circle_marker_367364598b2a465580a4ca5c0303bdad = L.circleMarker(
+                [42.2575385, -83.2110375],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_007c68440c48417fb66bda5319de6267 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fcae5539a325404bbc2e5206a3daec14 = $(`<div id="html_fcae5539a325404bbc2e5206a3daec14" style="width: 100.0%; height: 100.0%;">Allen Park, MI Cluster 5</div>`)[0];
+                popup_007c68440c48417fb66bda5319de6267.setContent(html_fcae5539a325404bbc2e5206a3daec14);
+            
+
+            circle_marker_367364598b2a465580a4ca5c0303bdad.bindPopup(popup_007c68440c48417fb66bda5319de6267)
+            ;
+
+            
+        
+    
+            var circle_marker_2508a66c04654f9d93627493eaf2f4e2 = L.circleMarker(
+                [42.2048414, -83.4852106],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_a853e72ccdaa4e269b36098f5a94e183 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d76a4bfa55d142318eb3a2fdcd97e0a8 = $(`<div id="html_d76a4bfa55d142318eb3a2fdcd97e0a8" style="width: 100.0%; height: 100.0%;">Belleville, MI Cluster 5</div>`)[0];
+                popup_a853e72ccdaa4e269b36098f5a94e183.setContent(html_d76a4bfa55d142318eb3a2fdcd97e0a8);
+            
+
+            circle_marker_2508a66c04654f9d93627493eaf2f4e2.bindPopup(popup_a853e72ccdaa4e269b36098f5a94e183)
+            ;
+
+            
+        
+    
+            var circle_marker_f14cd0cb70e64abb85d253ba1bbdfef2 = L.circleMarker(
+                [42.308081, -83.4868677071791],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_26c81901cea24fe19ba2d30d54f6bee8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6accb9b462ff454d89b0b58353ec5d3e = $(`<div id="html_6accb9b462ff454d89b0b58353ec5d3e" style="width: 100.0%; height: 100.0%;">Canton, MI Cluster 1</div>`)[0];
+                popup_26c81901cea24fe19ba2d30d54f6bee8.setContent(html_6accb9b462ff454d89b0b58353ec5d3e);
+            
+
+            circle_marker_f14cd0cb70e64abb85d253ba1bbdfef2.bindPopup(popup_26c81901cea24fe19ba2d30d54f6bee8)
+            ;
+
+            
+        
+    
+            var circle_marker_2c0534c4b84044b3a9091caea2e311fa = L.circleMarker(
+                [42.3222599, -83.1763145],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_fe9cf36729b142ab8931d38244e44a11 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_066256c0497f4b148de9e3826c43c278 = $(`<div id="html_066256c0497f4b148de9e3826c43c278" style="width: 100.0%; height: 100.0%;">Dearborn, MI Cluster 0</div>`)[0];
+                popup_fe9cf36729b142ab8931d38244e44a11.setContent(html_066256c0497f4b148de9e3826c43c278);
+            
+
+            circle_marker_2c0534c4b84044b3a9091caea2e311fa.bindPopup(popup_fe9cf36729b142ab8931d38244e44a11)
+            ;
+
+            
+        
+    
+            var circle_marker_912a2c205c344161a51585f0fffa481b = L.circleMarker(
+                [42.3369816, -83.2732627],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_ec4f23cfb7504329b5b5942b474ccdf0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_91cda4406c824a3aa865c52fd786c9c8 = $(`<div id="html_91cda4406c824a3aa865c52fd786c9c8" style="width: 100.0%; height: 100.0%;">Dearborn Heights, MI Cluster 5</div>`)[0];
+                popup_ec4f23cfb7504329b5b5942b474ccdf0.setContent(html_91cda4406c824a3aa865c52fd786c9c8);
+            
+
+            circle_marker_912a2c205c344161a51585f0fffa481b.bindPopup(popup_ec4f23cfb7504329b5b5942b474ccdf0)
+            ;
+
+            
+        
+    
+            var circle_marker_fa3886768f9f4331a6157148f1b8760c = L.circleMarker(
+                [42.2497445, -83.1385172202566],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_08836e2b3f704c4aabedd6b3b3d25719 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a8327910e1ed42ec90f059a84ecfe957 = $(`<div id="html_a8327910e1ed42ec90f059a84ecfe957" style="width: 100.0%; height: 100.0%;">Ecorse, MI Cluster 7</div>`)[0];
+                popup_08836e2b3f704c4aabedd6b3b3d25719.setContent(html_a8327910e1ed42ec90f059a84ecfe957);
+            
+
+            circle_marker_fa3886768f9f4331a6157148f1b8760c.bindPopup(popup_08836e2b3f704c4aabedd6b3b3d25719)
+            ;
+
+            
+        
+    
+            var circle_marker_8e5670196a8f47a7bfa20e7122e94c4b = L.circleMarker(
+                [42.0964314, -83.2918744],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_af0b50d1174a42ca9b4db68ebecbb534 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bafc15103e534a53af790a6069d81ced = $(`<div id="html_bafc15103e534a53af790a6069d81ced" style="width: 100.0%; height: 100.0%;">Flat Rock, MI Cluster 5</div>`)[0];
+                popup_af0b50d1174a42ca9b4db68ebecbb534.setContent(html_bafc15103e534a53af790a6069d81ced);
+            
+
+            circle_marker_8e5670196a8f47a7bfa20e7122e94c4b.bindPopup(popup_af0b50d1174a42ca9b4db68ebecbb534)
+            ;
+
+            
+        
+    
+            var circle_marker_9fff119d4c9a4d57ae52130220b4375c = L.circleMarker(
+                [42.3255929, -83.3310422],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_1dd435afa1dc4fedb3ffc0612d8fa22f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e9d980d3d62c4c4e98450b357f85212c = $(`<div id="html_e9d980d3d62c4c4e98450b357f85212c" style="width: 100.0%; height: 100.0%;">Garden City, MI Cluster 5</div>`)[0];
+                popup_1dd435afa1dc4fedb3ffc0612d8fa22f.setContent(html_e9d980d3d62c4c4e98450b357f85212c);
+            
+
+            circle_marker_9fff119d4c9a4d57ae52130220b4375c.bindPopup(popup_1dd435afa1dc4fedb3ffc0612d8fa22f)
+            ;
+
+            
+        
+    
+            var circle_marker_30ff1c6603cc481597b35174d670869e = L.circleMarker(
+                [42.1381749, -83.1541226558589],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_3183080626a046b5bbedb033940a6628 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_639917b08bbe40669eb7c93d56d06702 = $(`<div id="html_639917b08bbe40669eb7c93d56d06702" style="width: 100.0%; height: 100.0%;">Grosse Ile, MI Cluster 2</div>`)[0];
+                popup_3183080626a046b5bbedb033940a6628.setContent(html_639917b08bbe40669eb7c93d56d06702);
+            
+
+            circle_marker_30ff1c6603cc481597b35174d670869e.bindPopup(popup_3183080626a046b5bbedb033940a6628)
+            ;
+
+            
+        
+    
+            var circle_marker_0ff67ea3cec844d0803fee6dde56cb39 = L.circleMarker(
+                [42.3861485, -82.9118591],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_73e30f0416fc48fa95846bef6a3e707a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6dc52e38f01e402e99350cbc9e943722 = $(`<div id="html_6dc52e38f01e402e99350cbc9e943722" style="width: 100.0%; height: 100.0%;">Grosse Pointe, MI Cluster 5</div>`)[0];
+                popup_73e30f0416fc48fa95846bef6a3e707a.setContent(html_6dc52e38f01e402e99350cbc9e943722);
+            
+
+            circle_marker_0ff67ea3cec844d0803fee6dde56cb39.bindPopup(popup_73e30f0416fc48fa95846bef6a3e707a)
+            ;
+
+            
+        
+    
+            var circle_marker_fc48a63026674852b843c1523ece2b66 = L.circleMarker(
+                [42.3928151, -83.0496438],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_50d9a3314b71493698a423532eed0720 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c44e27e0d1ec403daac17385f222e124 = $(`<div id="html_c44e27e0d1ec403daac17385f222e124" style="width: 100.0%; height: 100.0%;">Hamtramck, MI Cluster 0</div>`)[0];
+                popup_50d9a3314b71493698a423532eed0720.setContent(html_c44e27e0d1ec403daac17385f222e124);
+            
+
+            circle_marker_fc48a63026674852b843c1523ece2b66.bindPopup(popup_50d9a3314b71493698a423532eed0720)
+            ;
+
+            
+        
+    
+            var circle_marker_66b295eab2c44e9dada1adcb388c5ba5 = L.circleMarker(
+                [42.4333367, -82.9238847],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_5b52797fab294ea4b9b8f12c8f1658f3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c47b3e4e037d4371b9acbf31f53fb0d5 = $(`<div id="html_c47b3e4e037d4371b9acbf31f53fb0d5" style="width: 100.0%; height: 100.0%;">Harper Woods, MI Cluster 4</div>`)[0];
+                popup_5b52797fab294ea4b9b8f12c8f1658f3.setContent(html_c47b3e4e037d4371b9acbf31f53fb0d5);
+            
+
+            circle_marker_66b295eab2c44e9dada1adcb388c5ba5.bindPopup(popup_5b52797fab294ea4b9b8f12c8f1658f3)
+            ;
+
+            
+        
+    
+            var circle_marker_9e163628b5074415a47dce17e1713642 = L.circleMarker(
+                [42.4057135, -83.0969467],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_c8fd8e8a9faa4393bbad82fe79765068 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_df03ed0ecd624ef1a91c6cd8a5d90666 = $(`<div id="html_df03ed0ecd624ef1a91c6cd8a5d90666" style="width: 100.0%; height: 100.0%;">Highland Park, MI Cluster 3</div>`)[0];
+                popup_c8fd8e8a9faa4393bbad82fe79765068.setContent(html_df03ed0ecd624ef1a91c6cd8a5d90666);
+            
+
+            circle_marker_9e163628b5074415a47dce17e1713642.bindPopup(popup_c8fd8e8a9faa4393bbad82fe79765068)
+            ;
+
+            
+        
+    
+            var circle_marker_86fba2dd6b4c48ee833031262d672376 = L.circleMarker(
+                [42.2942045, -83.3099303],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_85de4b4f3855434995305b7aa645d297 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2cb224856f724e4cbf05482077723f24 = $(`<div id="html_2cb224856f724e4cbf05482077723f24" style="width: 100.0%; height: 100.0%;">Inkster, MI Cluster 4</div>`)[0];
+                popup_85de4b4f3855434995305b7aa645d297.setContent(html_2cb224856f724e4cbf05482077723f24);
+            
+
+            circle_marker_86fba2dd6b4c48ee833031262d672376.bindPopup(popup_85de4b4f3855434995305b7aa645d297)
+            ;
+
+            
+        
+    
+            var circle_marker_cb7ef060a8394086a4421139986d49c3 = L.circleMarker(
+                [42.2505943, -83.1785361],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_102689aea83d4c5f8453fd9fcb83058a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_42de4aed6c924f4a91e633ccf29cae19 = $(`<div id="html_42de4aed6c924f4a91e633ccf29cae19" style="width: 100.0%; height: 100.0%;">Lincoln Park, MI Cluster 5</div>`)[0];
+                popup_102689aea83d4c5f8453fd9fcb83058a.setContent(html_42de4aed6c924f4a91e633ccf29cae19);
+            
+
+            circle_marker_cb7ef060a8394086a4421139986d49c3.bindPopup(popup_102689aea83d4c5f8453fd9fcb83058a)
+            ;
+
+            
+        
+    
+            var circle_marker_b7f1432ee37049e4b90d1773ddc6faf1 = L.circleMarker(
+                [42.36837, -83.3527097],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_0eb03be8d4334a7c9ac2fd423bbea3f0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_955703a7d6614047923cf447ac90b736 = $(`<div id="html_955703a7d6614047923cf447ac90b736" style="width: 100.0%; height: 100.0%;">Livonia, MI Cluster 5</div>`)[0];
+                popup_0eb03be8d4334a7c9ac2fd423bbea3f0.setContent(html_955703a7d6614047923cf447ac90b736);
+            
+
+            circle_marker_b7f1432ee37049e4b90d1773ddc6faf1.bindPopup(popup_0eb03be8d4334a7c9ac2fd423bbea3f0)
+            ;
+
+            
+        
+    
+            var circle_marker_9d03cd41c3e246a899d07dbb37668441 = L.circleMarker(
+                [42.2825383, -83.175203],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_16ef45901daf4bce98998dd3eef13488 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_41ca737bfd5f4a639565ce063b29cd12 = $(`<div id="html_41ca737bfd5f4a639565ce063b29cd12" style="width: 100.0%; height: 100.0%;">Melvindale, MI Cluster 5</div>`)[0];
+                popup_16ef45901daf4bce98998dd3eef13488.setContent(html_41ca737bfd5f4a639565ce063b29cd12);
+            
+
+            circle_marker_9d03cd41c3e246a899d07dbb37668441.bindPopup(popup_16ef45901daf4bce98998dd3eef13488)
+            ;
+
+            
+        
+    
+            var circle_marker_59c0848ac5554728858448440880c944 = L.circleMarker(
+                [42.1625408, -83.4029885],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_919bf0373d04464b9e985ea97c1ffe66 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_59e3ea5705f24040aa04fd36ee5336ed = $(`<div id="html_59e3ea5705f24040aa04fd36ee5336ed" style="width: 100.0%; height: 100.0%;">New Boston, MI Cluster 5</div>`)[0];
+                popup_919bf0373d04464b9e985ea97c1ffe66.setContent(html_59e3ea5705f24040aa04fd36ee5336ed);
+            
+
+            circle_marker_59c0848ac5554728858448440880c944.bindPopup(popup_919bf0373d04464b9e985ea97c1ffe66)
+            ;
+
+            
+        
+    
+            var circle_marker_3f010dba857d4f8bab45e0383350971e = L.circleMarker(
+                [42.4310806, -83.4832262],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_2cbc9d483f2e48e8a3864db57053d60b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bc041e212a234e63b08e83ce2a77e561 = $(`<div id="html_bc041e212a234e63b08e83ce2a77e561" style="width: 100.0%; height: 100.0%;">Northville, MI Cluster 2</div>`)[0];
+                popup_2cbc9d483f2e48e8a3864db57053d60b.setContent(html_bc041e212a234e63b08e83ce2a77e561);
+            
+
+            circle_marker_3f010dba857d4f8bab45e0383350971e.bindPopup(popup_2cbc9d483f2e48e8a3864db57053d60b)
+            ;
+
+            
+        
+    
+            var circle_marker_d861d3c94ac54524abc96aed31357a70 = L.circleMarker(
+                [42.3712, -83.4675021],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_838d3392ced443099c8edda5e916aa66 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_62dae1a6674f4106be84de0f11505a38 = $(`<div id="html_62dae1a6674f4106be84de0f11505a38" style="width: 100.0%; height: 100.0%;">Plymouth, MI Cluster 2</div>`)[0];
+                popup_838d3392ced443099c8edda5e916aa66.setContent(html_62dae1a6674f4106be84de0f11505a38);
+            
+
+            circle_marker_d861d3c94ac54524abc96aed31357a70.bindPopup(popup_838d3392ced443099c8edda5e916aa66)
+            ;
+
+            
+        
+    
+            var circle_marker_fa1cda08d44a413d8fa421d8f51c2039 = L.circleMarker(
+                [42.3833698, -83.2965971],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_ae45278382e74640b8c68ae7d64d8e2e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1187cb4ab98142a9be7c7fa443702793 = $(`<div id="html_1187cb4ab98142a9be7c7fa443702793" style="width: 100.0%; height: 100.0%;">Redford, MI Cluster 4</div>`)[0];
+                popup_ae45278382e74640b8c68ae7d64d8e2e.setContent(html_1187cb4ab98142a9be7c7fa443702793);
+            
+
+            circle_marker_fa1cda08d44a413d8fa421d8f51c2039.bindPopup(popup_ae45278382e74640b8c68ae7d64d8e2e)
+            ;
+
+            
+        
+    
+            var circle_marker_45a9c291596944279e719d89e6f62abc = L.circleMarker(
+                [42.3050327, -83.2208026],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_1da2a898cb11429b9eb619a9e2147977 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e9e41e8f1416414f95a317989582f546 = $(`<div id="html_e9e41e8f1416414f95a317989582f546" style="width: 100.0%; height: 100.0%;">River Rouge, MI Cluster 5</div>`)[0];
+                popup_1da2a898cb11429b9eb619a9e2147977.setContent(html_e9e41e8f1416414f95a317989582f546);
+            
+
+            circle_marker_45a9c291596944279e719d89e6f62abc.bindPopup(popup_1da2a898cb11429b9eb619a9e2147977)
+            ;
+
+            
+        
+    
+            var circle_marker_d069668b7be34d2c903f7594f4950ed5 = L.circleMarker(
+                [42.1742073, -83.1793697],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_16ec295e7170451199bc70b0c95beb8b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4792ccb862654c11920fb8db13a65b9f = $(`<div id="html_4792ccb862654c11920fb8db13a65b9f" style="width: 100.0%; height: 100.0%;">Riverview, MI Cluster 5</div>`)[0];
+                popup_16ec295e7170451199bc70b0c95beb8b.setContent(html_4792ccb862654c11920fb8db13a65b9f);
+            
+
+            circle_marker_d069668b7be34d2c903f7594f4950ed5.bindPopup(popup_16ec295e7170451199bc70b0c95beb8b)
+            ;
+
+            
+        
+    
+            var circle_marker_1959136868c6480fb11711892d38b472 = L.circleMarker(
+                [42.0708765, -83.2465957],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_414ddaae9f3545ddb5697ac5fbe73107 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dd44d9a82ff54c1b81d6daf5c6a0dad7 = $(`<div id="html_dd44d9a82ff54c1b81d6daf5c6a0dad7" style="width: 100.0%; height: 100.0%;">Rockwood, MI Cluster 5</div>`)[0];
+                popup_414ddaae9f3545ddb5697ac5fbe73107.setContent(html_dd44d9a82ff54c1b81d6daf5c6a0dad7);
+            
+
+            circle_marker_1959136868c6480fb11711892d38b472.bindPopup(popup_414ddaae9f3545ddb5697ac5fbe73107)
+            ;
+
+            
+        
+    
+            var circle_marker_e2625ae4253a43da831d013d5ec931df = L.circleMarker(
+                [42.2222614, -83.3965995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_4b2d0c2363334a3281e13bfdb5f4256c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1b12d7046f1c443c89f042c39e4fc2f8 = $(`<div id="html_1b12d7046f1c443c89f042c39e4fc2f8" style="width: 100.0%; height: 100.0%;">Romulus, MI Cluster 5</div>`)[0];
+                popup_4b2d0c2363334a3281e13bfdb5f4256c.setContent(html_1b12d7046f1c443c89f042c39e4fc2f8);
+            
+
+            circle_marker_e2625ae4253a43da831d013d5ec931df.bindPopup(popup_4b2d0c2363334a3281e13bfdb5f4256c)
+            ;
+
+            
+        
+    
+            var circle_marker_512dba1dd9b941a98b72bfc558aee35f = L.circleMarker(
+                [42.2062628, -83.2047391078202],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_786b3ed9d16a430a9e8b2c7bc606c1f7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ea337101eb954a0a998b17b77e0f9de6 = $(`<div id="html_ea337101eb954a0a998b17b77e0f9de6" style="width: 100.0%; height: 100.0%;">Southgate, MI Cluster 5</div>`)[0];
+                popup_786b3ed9d16a430a9e8b2c7bc606c1f7.setContent(html_ea337101eb954a0a998b17b77e0f9de6);
+            
+
+            circle_marker_512dba1dd9b941a98b72bfc558aee35f.bindPopup(popup_786b3ed9d16a430a9e8b2c7bc606c1f7)
+            ;
+
+            
+        
+    
+            var circle_marker_d9668403f4c14fbd8c2263ba026a7ba4 = L.circleMarker(
+                [42.240872, -83.2696509],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_df1ef78bcde141fbb0ab3fe24dee527a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_43db300fe1ae4893881f752f634b5956 = $(`<div id="html_43db300fe1ae4893881f752f634b5956" style="width: 100.0%; height: 100.0%;">Taylor, MI Cluster 5</div>`)[0];
+                popup_df1ef78bcde141fbb0ab3fe24dee527a.setContent(html_43db300fe1ae4893881f752f634b5956);
+            
+
+            circle_marker_d9668403f4c14fbd8c2263ba026a7ba4.bindPopup(popup_df1ef78bcde141fbb0ab3fe24dee527a)
+            ;
+
+            
+        
+    
+            var circle_marker_8f0a75684d9c4efb94fd075b16dc9038 = L.circleMarker(
+                [42.1406552, -83.1800544],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_9aee7f9a177d43f786bf92a579556847 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6ce456655c484223b434a4e5da76709f = $(`<div id="html_6ce456655c484223b434a4e5da76709f" style="width: 100.0%; height: 100.0%;">Trenton, MI Cluster 5</div>`)[0];
+                popup_9aee7f9a177d43f786bf92a579556847.setContent(html_6ce456655c484223b434a4e5da76709f);
+            
+
+            circle_marker_8f0a75684d9c4efb94fd075b16dc9038.bindPopup(popup_9aee7f9a177d43f786bf92a579556847)
+            ;
+
+            
+        
+    
+            var circle_marker_2a544b111eac4382b053e2d562dbed38 = L.circleMarker(
+                [42.2682408, -83.2844172],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_e5b5ea21754548c8b99c7b71ff1fd703 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7a18d65f3d3f4b9a95d5437b7f0f824f = $(`<div id="html_7a18d65f3d3f4b9a95d5437b7f0f824f" style="width: 100.0%; height: 100.0%;">Wayne, MI Cluster 5</div>`)[0];
+                popup_e5b5ea21754548c8b99c7b71ff1fd703.setContent(html_7a18d65f3d3f4b9a95d5437b7f0f824f);
+            
+
+            circle_marker_2a544b111eac4382b053e2d562dbed38.bindPopup(popup_e5b5ea21754548c8b99c7b71ff1fd703)
+            ;
+
+            
+        
+    
+            var circle_marker_ccc2f71664d8417d857a1d14c28b340d = L.circleMarker(
+                [42.3238056, -83.4005321],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_35e8d151e22b47678dc002eb0e6adad3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ced8e10d93c543a698d4d26bbebb79e1 = $(`<div id="html_ced8e10d93c543a698d4d26bbebb79e1" style="width: 100.0%; height: 100.0%;">Westland, MI Cluster 5</div>`)[0];
+                popup_35e8d151e22b47678dc002eb0e6adad3.setContent(html_ced8e10d93c543a698d4d26bbebb79e1);
+            
+
+            circle_marker_ccc2f71664d8417d857a1d14c28b340d.bindPopup(popup_35e8d151e22b47678dc002eb0e6adad3)
+            ;
+
+            
+        
+    
+            var circle_marker_59480beb4d6542e8b395884778985254 = L.circleMarker(
+                [42.2006617, -83.1510164],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_8fed7792c6714e8296e8b89ff0eb6d27 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_49d2e56b47b14d18b233628d44f29d07 = $(`<div id="html_49d2e56b47b14d18b233628d44f29d07" style="width: 100.0%; height: 100.0%;">Wyandotte, MI Cluster 5</div>`)[0];
+                popup_8fed7792c6714e8296e8b89ff0eb6d27.setContent(html_49d2e56b47b14d18b233628d44f29d07);
+            
+
+            circle_marker_59480beb4d6542e8b395884778985254.bindPopup(popup_8fed7792c6714e8296e8b89ff0eb6d27)
+            ;
+
+            
+        
+    
+            var circle_marker_0cb0819288bf44368ca3e6abbce03c46 = L.circleMarker(
+                [42.6647495, -83.230937613002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_bbea3e16fe314005ae97d83107a9f003 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_12e4dd39005f45af9ff25945aeb80e2f = $(`<div id="html_12e4dd39005f45af9ff25945aeb80e2f" style="width: 100.0%; height: 100.0%;">Auburn Hills, MI Cluster 5</div>`)[0];
+                popup_bbea3e16fe314005ae97d83107a9f003.setContent(html_12e4dd39005f45af9ff25945aeb80e2f);
+            
+
+            circle_marker_0cb0819288bf44368ca3e6abbce03c46.bindPopup(popup_bbea3e16fe314005ae97d83107a9f003)
+            ;
+
+            
+        
+    
+            var circle_marker_a201ff09e31b4e60accb0776e14b1726 = L.circleMarker(
+                [42.5030909, -83.1835389],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_14f2435a96134eafb92a3618bc01dd80 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cf0f3c369b9d4764897c0a5d9d7460e3 = $(`<div id="html_cf0f3c369b9d4764897c0a5d9d7460e3" style="width: 100.0%; height: 100.0%;">Berkley, MI Cluster 2</div>`)[0];
+                popup_14f2435a96134eafb92a3618bc01dd80.setContent(html_cf0f3c369b9d4764897c0a5d9d7460e3);
+            
+
+            circle_marker_a201ff09e31b4e60accb0776e14b1726.bindPopup(popup_14f2435a96134eafb92a3618bc01dd80)
+            ;
+
+            
+        
+    
+            var circle_marker_f45bc245c2ac4fee9403daaacc2d4b9c = L.circleMarker(
+                [42.5467012, -83.2113192],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_8cfb3c127f1b49b8a46f23899bf98d76 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d9d14e3253ff49d4b5c36b84ae9cd55e = $(`<div id="html_d9d14e3253ff49d4b5c36b84ae9cd55e" style="width: 100.0%; height: 100.0%;">Birmingham, MI Cluster 2</div>`)[0];
+                popup_8cfb3c127f1b49b8a46f23899bf98d76.setContent(html_d9d14e3253ff49d4b5c36b84ae9cd55e);
+            
+
+            circle_marker_f45bc245c2ac4fee9403daaacc2d4b9c.bindPopup(popup_8cfb3c127f1b49b8a46f23899bf98d76)
+            ;
+
+            
+        
+    
+            var circle_marker_bf63e7db15ce4fdbbdbf73a818f6dade = L.circleMarker(
+                [42.583645, -83.2454883],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_fef48db4d4c54c2ea2c37947805106a3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_caaa8cbfca16481bbec0e59702306c21 = $(`<div id="html_caaa8cbfca16481bbec0e59702306c21" style="width: 100.0%; height: 100.0%;">Bloomfield Hills, MI Cluster 2</div>`)[0];
+                popup_fef48db4d4c54c2ea2c37947805106a3.setContent(html_caaa8cbfca16481bbec0e59702306c21);
+            
+
+            circle_marker_bf63e7db15ce4fdbbdbf73a818f6dade.bindPopup(popup_fef48db4d4c54c2ea2c37947805106a3)
+            ;
+
+            
+        
+    
+            var circle_marker_4441836243a540929eb1f6ef78c7fda9 = L.circleMarker(
+                [42.7086411, -83.4396633],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_4e964617a37348eba2bf583d652c7def = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_208354ba9431448fb5baadc07b1e5b78 = $(`<div id="html_208354ba9431448fb5baadc07b1e5b78" style="width: 100.0%; height: 100.0%;">Clarkston, MI Cluster 5</div>`)[0];
+                popup_4e964617a37348eba2bf583d652c7def.setContent(html_208354ba9431448fb5baadc07b1e5b78);
+            
+
+            circle_marker_4441836243a540929eb1f6ef78c7fda9.bindPopup(popup_4e964617a37348eba2bf583d652c7def)
+            ;
+
+            
+        
+    
+            var circle_marker_43aca0bd0e0a4ba1ae41f71af53c973e = L.circleMarker(
+                [42.5333682, -83.1463166],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_c5dcffdf65ed4560b95b1c482548255c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9bb1e6594e8b4d199e307f7f0ed03d8d = $(`<div id="html_9bb1e6594e8b4d199e307f7f0ed03d8d" style="width: 100.0%; height: 100.0%;">Clawson, MI Cluster 5</div>`)[0];
+                popup_c5dcffdf65ed4560b95b1c482548255c.setContent(html_9bb1e6594e8b4d199e307f7f0ed03d8d);
+            
+
+            circle_marker_43aca0bd0e0a4ba1ae41f71af53c973e.bindPopup(popup_c5dcffdf65ed4560b95b1c482548255c)
+            ;
+
+            
+        
+    
+            var circle_marker_81b66aa121524e2db7ec9f1c4da611c7 = L.circleMarker(
+                [42.56921505, -83.4996709816269],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_2ad32e3ee8ea498aa1d206a311551d01 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cdb9e9002a8a472db4c54126df17f55c = $(`<div id="html_cdb9e9002a8a472db4c54126df17f55c" style="width: 100.0%; height: 100.0%;">Commerce Township, MI Cluster 2</div>`)[0];
+                popup_2ad32e3ee8ea498aa1d206a311551d01.setContent(html_cdb9e9002a8a472db4c54126df17f55c);
+            
+
+            circle_marker_81b66aa121524e2db7ec9f1c4da611c7.bindPopup(popup_2ad32e3ee8ea498aa1d206a311551d01)
+            ;
+
+            
+        
+    
+            var circle_marker_a6c0ec0995b5442d8440b6df4f33dd05 = L.circleMarker(
+                [42.7522507, -83.5413334],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_93ee9e9aaa11469fbe66bc707cf0f50a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2c4c956c7e9a45a6aac03a430f042911 = $(`<div id="html_2c4c956c7e9a45a6aac03a430f042911" style="width: 100.0%; height: 100.0%;">Davisburg, MI Cluster 2</div>`)[0];
+                popup_93ee9e9aaa11469fbe66bc707cf0f50a.setContent(html_2c4c956c7e9a45a6aac03a430f042911);
+            
+
+            circle_marker_a6c0ec0995b5442d8440b6df4f33dd05.bindPopup(popup_93ee9e9aaa11469fbe66bc707cf0f50a)
+            ;
+
+            
+        
+    
+            var circle_marker_21b640448ec345f8b6406e2d3c9b0bdb = L.circleMarker(
+                [42.4644795, -83.3763219],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_f657ce8027824ba7aa837b3941313cbd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dfd7fae3e6184c4d84259e6f88659df0 = $(`<div id="html_dfd7fae3e6184c4d84259e6f88659df0" style="width: 100.0%; height: 100.0%;">Farmington, MI Cluster 2</div>`)[0];
+                popup_f657ce8027824ba7aa837b3941313cbd.setContent(html_dfd7fae3e6184c4d84259e6f88659df0);
+            
+
+            circle_marker_21b640448ec345f8b6406e2d3c9b0bdb.bindPopup(popup_f657ce8027824ba7aa837b3941313cbd)
+            ;
+
+            
+        
+    
+            var circle_marker_2db0274c32814877b5b24072f7257fb0 = L.circleMarker(
+                [42.4605917, -83.1346478],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_325cb7b89385436a976f2ebb86aea9fa = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_76bf0fbd38714dd3af6c71a99a64f293 = $(`<div id="html_76bf0fbd38714dd3af6c71a99a64f293" style="width: 100.0%; height: 100.0%;">Ferndale, MI Cluster 2</div>`)[0];
+                popup_325cb7b89385436a976f2ebb86aea9fa.setContent(html_76bf0fbd38714dd3af6c71a99a64f293);
+            
+
+            circle_marker_2db0274c32814877b5b24072f7257fb0.bindPopup(popup_325cb7b89385436a976f2ebb86aea9fa)
+            ;
+
+            
+        
+    
+            var circle_marker_f1b1d0bae1d94ec497346ded14ce53e1 = L.circleMarker(
+                [42.5222567, -83.3060432],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_b2818eeb51634ae69ba18ad84204a250 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1c6f5fb1eee34eb982d076035791b555 = $(`<div id="html_1c6f5fb1eee34eb982d076035791b555" style="width: 100.0%; height: 100.0%;">Franklin, MI Cluster 2</div>`)[0];
+                popup_b2818eeb51634ae69ba18ad84204a250.setContent(html_1c6f5fb1eee34eb982d076035791b555);
+            
+
+            circle_marker_f1b1d0bae1d94ec497346ded14ce53e1.bindPopup(popup_b2818eeb51634ae69ba18ad84204a250)
+            ;
+
+            
+        
+    
+            var circle_marker_6fa6bbfa9a054f6b9031b77c1f4b4904 = L.circleMarker(
+                [42.4620142, -83.1035688],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_c0c8552a5e334028b59ed92c45680b57 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_be7760a22e2e492092c6afbc14959d84 = $(`<div id="html_be7760a22e2e492092c6afbc14959d84" style="width: 100.0%; height: 100.0%;">Hazel Park, MI Cluster 0</div>`)[0];
+                popup_c0c8552a5e334028b59ed92c45680b57.setContent(html_be7760a22e2e492092c6afbc14959d84);
+            
+
+            circle_marker_6fa6bbfa9a054f6b9031b77c1f4b4904.bindPopup(popup_c0c8552a5e334028b59ed92c45680b57)
+            ;
+
+            
+        
+    
+            var circle_marker_e3d12e19e10a4586a8578816a6640880 = L.circleMarker(
+                [42.7919727, -83.6277255],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_1a39e0198911431498f37a77aab2eb29 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2d20019e8661404e8e3afcfdb03f1305 = $(`<div id="html_2d20019e8661404e8e3afcfdb03f1305" style="width: 100.0%; height: 100.0%;">Holly, MI Cluster 5</div>`)[0];
+                popup_1a39e0198911431498f37a77aab2eb29.setContent(html_2d20019e8661404e8e3afcfdb03f1305);
+            
+
+            circle_marker_e3d12e19e10a4586a8578816a6640880.bindPopup(popup_1a39e0198911431498f37a77aab2eb29)
+            ;
+
+            
+        
+    
+            var circle_marker_84c0c9f7ace74e1d89d0036eb95ef93a = L.circleMarker(
+                [42.4805913, -83.1668713],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_e1ae101af0de4cc4a091d07c4baea1bc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9b6e207e2c1f43ed8f9076fb27ee1813 = $(`<div id="html_9b6e207e2c1f43ed8f9076fb27ee1813" style="width: 100.0%; height: 100.0%;">Huntington Woods, MI Cluster 2</div>`)[0];
+                popup_e1ae101af0de4cc4a091d07c4baea1bc.setContent(html_9b6e207e2c1f43ed8f9076fb27ee1813);
+            
+
+            circle_marker_84c0c9f7ace74e1d89d0036eb95ef93a.bindPopup(popup_e1ae101af0de4cc4a091d07c4baea1bc)
+            ;
+
+            
+        
+    
+            var circle_marker_aa0b50b2559448dc8ee4860012ef1de5 = L.circleMarker(
+                [42.6080884, -83.3438248],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_b1c562bac37e4da599268f3b59d95761 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7048f858cd6945eaa139284b3223d92c = $(`<div id="html_7048f858cd6945eaa139284b3223d92c" style="width: 100.0%; height: 100.0%;">Keego Harbor, MI Cluster 5</div>`)[0];
+                popup_b1c562bac37e4da599268f3b59d95761.setContent(html_7048f858cd6945eaa139284b3223d92c);
+            
+
+            circle_marker_aa0b50b2559448dc8ee4860012ef1de5.bindPopup(popup_b1c562bac37e4da599268f3b59d95761)
+            ;
+
+            
+        
+    
+            var circle_marker_70f43093b7de4e9984e60019fbb37799 = L.circleMarker(
+                [42.7844752, -83.2396612],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_1488409e6c0b47249a1df756cbcfbf61 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_76453e25920944cf81f0315786307868 = $(`<div id="html_76453e25920944cf81f0315786307868" style="width: 100.0%; height: 100.0%;">Lake Orion, MI Cluster 5</div>`)[0];
+                popup_1488409e6c0b47249a1df756cbcfbf61.setContent(html_76453e25920944cf81f0315786307868);
+            
+
+            circle_marker_70f43093b7de4e9984e60019fbb37799.bindPopup(popup_1488409e6c0b47249a1df756cbcfbf61)
+            ;
+
+            
+        
+    
+            var circle_marker_e201342ca06f4a2697b240e06773fde1 = L.circleMarker(
+                [42.8214191, -83.1502144],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_8f3e2a2fb339446eb50384d32fd7bf8a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_46dbee76b76c44bc8e9d7e5c51a4cb18 = $(`<div id="html_46dbee76b76c44bc8e9d7e5c51a4cb18" style="width: 100.0%; height: 100.0%;">Lakeville, MI Cluster 2</div>`)[0];
+                popup_8f3e2a2fb339446eb50384d32fd7bf8a.setContent(html_46dbee76b76c44bc8e9d7e5c51a4cb18);
+            
+
+            circle_marker_e201342ca06f4a2697b240e06773fde1.bindPopup(popup_8f3e2a2fb339446eb50384d32fd7bf8a)
+            ;
+
+            
+        
+    
+            var circle_marker_eefde08da1eb46a08f21b3722c9ca3f5 = L.circleMarker(
+                [42.8653073, -83.1427148],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_427bd901663d409ea3f41062a73a02b0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_af5611c76a6643f7a17614bea81102f3 = $(`<div id="html_af5611c76a6643f7a17614bea81102f3" style="width: 100.0%; height: 100.0%;">Leonard, MI Cluster 5</div>`)[0];
+                popup_427bd901663d409ea3f41062a73a02b0.setContent(html_af5611c76a6643f7a17614bea81102f3);
+            
+
+            circle_marker_eefde08da1eb46a08f21b3722c9ca3f5.bindPopup(popup_427bd901663d409ea3f41062a73a02b0)
+            ;
+
+            
+        
+    
+            var circle_marker_c3f6ca8807244c4993453495c65291b3 = L.circleMarker(
+                [42.4858692, -83.1052028],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_06665888baf043da913c45e9b5b945f2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5332ba38ff2b49aba06044b6b11f09a5 = $(`<div id="html_5332ba38ff2b49aba06044b6b11f09a5" style="width: 100.0%; height: 100.0%;">Madison Heights, MI Cluster 5</div>`)[0];
+                popup_06665888baf043da913c45e9b5b945f2.setContent(html_5332ba38ff2b49aba06044b6b11f09a5);
+            
+
+            circle_marker_c3f6ca8807244c4993453495c65291b3.bindPopup(popup_06665888baf043da913c45e9b5b945f2)
+            ;
+
+            
+        
+    
+            var circle_marker_3879f2e6777c41858fd92cf26df55895 = L.circleMarker(
+                [42.5936428, -83.5993856],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_3a40f2e189034cd2bc5b9a18ff2be5a3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fd394ddb2c6f4156a4c58c4f53ec6b59 = $(`<div id="html_fd394ddb2c6f4156a4c58c4f53ec6b59" style="width: 100.0%; height: 100.0%;">Milford, MI Cluster 5</div>`)[0];
+                popup_3a40f2e189034cd2bc5b9a18ff2be5a3.setContent(html_fd394ddb2c6f4156a4c58c4f53ec6b59);
+            
+
+            circle_marker_3879f2e6777c41858fd92cf26df55895.bindPopup(popup_3a40f2e189034cd2bc5b9a18ff2be5a3)
+            ;
+
+            
+        
+    
+            var circle_marker_553efa13998a403cae848a7cce271863 = L.circleMarker(
+                [42.511726, -83.6156648],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_13ff86f69c924229a3274c0710063764 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f79b549320434f169df13042a6a64435 = $(`<div id="html_f79b549320434f169df13042a6a64435" style="width: 100.0%; height: 100.0%;">New Hudson, MI Cluster 2</div>`)[0];
+                popup_13ff86f69c924229a3274c0710063764.setContent(html_f79b549320434f169df13042a6a64435);
+            
+
+            circle_marker_553efa13998a403cae848a7cce271863.bindPopup(popup_13ff86f69c924229a3274c0710063764)
+            ;
+
+            
+        
+    
+            var circle_marker_1420e1699926433f9054c205e234288d = L.circleMarker(
+                [42.48059, -83.4754913],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_0ff0b0b2726c469e9701bf2489604174 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7169853bcb7c44a0bf10c8af74c7a7cb = $(`<div id="html_7169853bcb7c44a0bf10c8af74c7a7cb" style="width: 100.0%; height: 100.0%;">Novi, MI Cluster 1</div>`)[0];
+                popup_0ff0b0b2726c469e9701bf2489604174.setContent(html_7169853bcb7c44a0bf10c8af74c7a7cb);
+            
+
+            circle_marker_1420e1699926433f9054c205e234288d.bindPopup(popup_0ff0b0b2726c469e9701bf2489604174)
+            ;
+
+            
+        
+    
+            var circle_marker_5f4e4315a4bb4e03821ab883d99d9a53 = L.circleMarker(
+                [42.4594803, -83.1827051],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_a4df4a9af5994cf5bb34cc46d1705f77 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7a62ece6277a4e928fff8f269ad961a8 = $(`<div id="html_7a62ece6277a4e928fff8f269ad961a8" style="width: 100.0%; height: 100.0%;">Oak Park, MI Cluster 4</div>`)[0];
+                popup_a4df4a9af5994cf5bb34cc46d1705f77.setContent(html_7a62ece6277a4e928fff8f269ad961a8);
+            
+
+            circle_marker_5f4e4315a4bb4e03821ab883d99d9a53.bindPopup(popup_a4df4a9af5994cf5bb34cc46d1705f77)
+            ;
+
+            
+        
+    
+            var circle_marker_d9b18092378c46a697fde7a6c895743f = L.circleMarker(
+                [42.6618842, -83.3804439],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_97d7e1f443ae426787d8cfcc6f95f8a8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bf5cdb4b9e4f47eb8dc41043e50c884f = $(`<div id="html_bf5cdb4b9e4f47eb8dc41043e50c884f" style="width: 100.0%; height: 100.0%;">Oakland, MI Cluster 5</div>`)[0];
+                popup_97d7e1f443ae426787d8cfcc6f95f8a8.setContent(html_bf5cdb4b9e4f47eb8dc41043e50c884f);
+            
+
+            circle_marker_d9b18092378c46a697fde7a6c895743f.bindPopup(popup_97d7e1f443ae426787d8cfcc6f95f8a8)
+            ;
+
+            
+        
+    
+            var circle_marker_780922806d234ce1ab65b1c13d514ad4 = L.circleMarker(
+                [42.8522506, -83.4430002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_78ac51f19d8340909ce40a8bdb4df748 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eef7971edfdf4b53a740ad9b056de940 = $(`<div id="html_eef7971edfdf4b53a740ad9b056de940" style="width: 100.0%; height: 100.0%;">Ortonville, MI Cluster 5</div>`)[0];
+                popup_78ac51f19d8340909ce40a8bdb4df748.setContent(html_eef7971edfdf4b53a740ad9b056de940);
+            
+
+            circle_marker_780922806d234ce1ab65b1c13d514ad4.bindPopup(popup_78ac51f19d8340909ce40a8bdb4df748)
+            ;
+
+            
+        
+    
+            var circle_marker_2c13a1c6c0f047deaf30006cc129387c = L.circleMarker(
+                [42.8247524, -83.2646624],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_4263e9ae83ae42e2b3f6decec4ccf5e4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c6a45bd2061f44e48df972917d102673 = $(`<div id="html_c6a45bd2061f44e48df972917d102673" style="width: 100.0%; height: 100.0%;">Oxford, MI Cluster 5</div>`)[0];
+                popup_4263e9ae83ae42e2b3f6decec4ccf5e4.setContent(html_c6a45bd2061f44e48df972917d102673);
+            
+
+            circle_marker_2c13a1c6c0f047deaf30006cc129387c.bindPopup(popup_4263e9ae83ae42e2b3f6decec4ccf5e4)
+            ;
+
+            
+        
+    
+            var circle_marker_4d3c52bb8dd1473494f13adeeea10415 = L.circleMarker(
+                [42.471147, -83.1421482],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_4f7a0e1d55fb4558aae522695168ca47 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_64d7aa0ee1314b84bd2b96092d604e9f = $(`<div id="html_64d7aa0ee1314b84bd2b96092d604e9f" style="width: 100.0%; height: 100.0%;">Pleasant Ridge, MI Cluster 2</div>`)[0];
+                popup_4f7a0e1d55fb4558aae522695168ca47.setContent(html_64d7aa0ee1314b84bd2b96092d604e9f);
+            
+
+            circle_marker_4d3c52bb8dd1473494f13adeeea10415.bindPopup(popup_4f7a0e1d55fb4558aae522695168ca47)
+            ;
+
+            
+        
+    
+            var circle_marker_e16d72ec13e6498b9fa6fc9265a363b5 = L.circleMarker(
+                [42.6389216, -83.2910468],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_76c4cab62f494973a1b91de2d4af906b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_faf560b095bb4ad4adce93cf7564557c = $(`<div id="html_faf560b095bb4ad4adce93cf7564557c" style="width: 100.0%; height: 100.0%;">Pontiac, MI Cluster 9</div>`)[0];
+                popup_76c4cab62f494973a1b91de2d4af906b.setContent(html_faf560b095bb4ad4adce93cf7564557c);
+            
+
+            circle_marker_e16d72ec13e6498b9fa6fc9265a363b5.bindPopup(popup_76c4cab62f494973a1b91de2d4af906b)
+            ;
+
+            
+        
+    
+            var circle_marker_75202c3633ae4d11ba5bf20684aa71fc = L.circleMarker(
+                [42.680588, -83.1338214],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_8838bd62ceca429dbab8a06b6cabd2a9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_667a07baf2014fdc84afcc315ca77c51 = $(`<div id="html_667a07baf2014fdc84afcc315ca77c51" style="width: 100.0%; height: 100.0%;">Rochester, MI Cluster 5</div>`)[0];
+                popup_8838bd62ceca429dbab8a06b6cabd2a9.setContent(html_667a07baf2014fdc84afcc315ca77c51);
+            
+
+            circle_marker_75202c3633ae4d11ba5bf20684aa71fc.bindPopup(popup_8838bd62ceca429dbab8a06b6cabd2a9)
+            ;
+
+            
+        
+    
+            var circle_marker_0b305fed81b34bbcb0c403ee44f09c2c = L.circleMarker(
+                [42.4894801, -83.1446485],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_0cd32d3e75ca4316b7fa4b7d03e921ba = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_edcf56c22e4a4b919287ed4c0dfef0d4 = $(`<div id="html_edcf56c22e4a4b919287ed4c0dfef0d4" style="width: 100.0%; height: 100.0%;">Royal Oak, MI Cluster 2</div>`)[0];
+                popup_0cd32d3e75ca4316b7fa4b7d03e921ba.setContent(html_edcf56c22e4a4b919287ed4c0dfef0d4);
+            
+
+            circle_marker_0b305fed81b34bbcb0c403ee44f09c2c.bindPopup(popup_0cd32d3e75ca4316b7fa4b7d03e921ba)
+            ;
+
+            
+        
+    
+            var circle_marker_e14c6b28d63840dba6aef1e0b9aafc4e = L.circleMarker(
+                [42.451377, -83.659179],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_b8923bbddca54ae9a0c2e6b78ce3b4b8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8033410200bc4f239285870265062067 = $(`<div id="html_8033410200bc4f239285870265062067" style="width: 100.0%; height: 100.0%;">South Lyon, MI Cluster 5</div>`)[0];
+                popup_b8923bbddca54ae9a0c2e6b78ce3b4b8.setContent(html_8033410200bc4f239285870265062067);
+            
+
+            circle_marker_e14c6b28d63840dba6aef1e0b9aafc4e.bindPopup(popup_b8923bbddca54ae9a0c2e6b78ce3b4b8)
+            ;
+
+            
+        
+    
+            var circle_marker_fc819f758d674f5984989b6a8ce84c6e = L.circleMarker(
+                [42.4733689, -83.2218731],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_33f2fdba3dd64f098535f1f2dfc0baf5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a3ce9923ea9c41a28f88e8538196a689 = $(`<div id="html_a3ce9923ea9c41a28f88e8538196a689" style="width: 100.0%; height: 100.0%;">Southfield, MI Cluster 4</div>`)[0];
+                popup_33f2fdba3dd64f098535f1f2dfc0baf5.setContent(html_a3ce9923ea9c41a28f88e8538196a689);
+            
+
+            circle_marker_fc819f758d674f5984989b6a8ce84c6e.bindPopup(popup_33f2fdba3dd64f098535f1f2dfc0baf5)
+            ;
+
+            
+        
+    
+            var circle_marker_0586b70c49e54dba87429b4999639dfb = L.circleMarker(
+                [42.6055893, -83.1499304],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_fc0ca72d3fde46df8994464b9b52a57a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0b4cc5a458ac44d1a13cd7e9f1ebf199 = $(`<div id="html_0b4cc5a458ac44d1a13cd7e9f1ebf199" style="width: 100.0%; height: 100.0%;">Troy, MI Cluster 1</div>`)[0];
+                popup_fc0ca72d3fde46df8994464b9b52a57a.setContent(html_0b4cc5a458ac44d1a13cd7e9f1ebf199);
+            
+
+            circle_marker_0586b70c49e54dba87429b4999639dfb.bindPopup(popup_fc0ca72d3fde46df8994464b9b52a57a)
+            ;
+
+            
+        
+    
+            var circle_marker_15f11937f1744fb6a9b646d7967475a5 = L.circleMarker(
+                [42.6065098, -83.4310455701463],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_bb6dc06d58a7447d8753f7af48b9aaaf = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e7cf751ca02e45a986625d55625712c9 = $(`<div id="html_e7cf751ca02e45a986625d55625712c9" style="width: 100.0%; height: 100.0%;">Union Lake, MI Cluster 2</div>`)[0];
+                popup_bb6dc06d58a7447d8753f7af48b9aaaf.setContent(html_e7cf751ca02e45a986625d55625712c9);
+            
+
+            circle_marker_15f11937f1744fb6a9b646d7967475a5.bindPopup(popup_bb6dc06d58a7447d8753f7af48b9aaaf)
+            ;
+
+            
+        
+    
+            var circle_marker_ee17f683a8e64211bf1ce1a797c20bbf = L.circleMarker(
+                [42.537811, -83.4810481],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_a1f5ca78adf3456d81d3df242f041e29 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fca4c49b30c84ac69a73ac978cabfc70 = $(`<div id="html_fca4c49b30c84ac69a73ac978cabfc70" style="width: 100.0%; height: 100.0%;">Walled Lake, MI Cluster 5</div>`)[0];
+                popup_a1f5ca78adf3456d81d3df242f041e29.setContent(html_fca4c49b30c84ac69a73ac978cabfc70);
+            
+
+            circle_marker_ee17f683a8e64211bf1ce1a797c20bbf.bindPopup(popup_a1f5ca78adf3456d81d3df242f041e29)
+            ;
+
+            
+        
+    
+            var circle_marker_5365855b17764b89a40e9f16125aea7a = L.circleMarker(
+                [42.7022527, -83.402718],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_6ca5e2ca83044dd986bf2ecdb8736eec = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6e01118935f24349b4cb5304b945c1a4 = $(`<div id="html_6e01118935f24349b4cb5304b945c1a4" style="width: 100.0%; height: 100.0%;">Waterford, MI Cluster 5</div>`)[0];
+                popup_6ca5e2ca83044dd986bf2ecdb8736eec.setContent(html_6e01118935f24349b4cb5304b945c1a4);
+            
+
+            circle_marker_5365855b17764b89a40e9f16125aea7a.bindPopup(popup_6ca5e2ca83044dd986bf2ecdb8736eec)
+            ;
+
+            
+        
+    
+            var circle_marker_5de69e05ac904672bbcac47e69f41183 = L.circleMarker(
+                [42.6916964, -83.5541098],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_8b0605e80fea4f83922cd71bb7612978 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dcf45ec3472149f898f8b70611a2a8fc = $(`<div id="html_dcf45ec3472149f898f8b70611a2a8fc" style="width: 100.0%; height: 100.0%;">White Lake, MI Cluster 5</div>`)[0];
+                popup_8b0605e80fea4f83922cd71bb7612978.setContent(html_dcf45ec3472149f898f8b70611a2a8fc);
+            
+
+            circle_marker_5de69e05ac904672bbcac47e69f41183.bindPopup(popup_8b0605e80fea4f83922cd71bb7612978)
+            ;
+
+            
+        
+    
+            var circle_marker_b81b1216238941e2ab15a9890264dc4f = L.circleMarker(
+                [42.5247729, -83.5363339],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_96b73e5e38c241028ebed7e0e0f92325 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d1766ef57abd4c789db79af5c4bbfe16 = $(`<div id="html_d1766ef57abd4c789db79af5c4bbfe16" style="width: 100.0%; height: 100.0%;">Wixom, MI Cluster 2</div>`)[0];
+                popup_96b73e5e38c241028ebed7e0e0f92325.setContent(html_d1766ef57abd4c789db79af5c4bbfe16);
+            
+
+            circle_marker_b81b1216238941e2ab15a9890264dc4f.bindPopup(popup_96b73e5e38c241028ebed7e0e0f92325)
+            ;
+
+            
+        
+    
+            var circle_marker_2a6d53e3fc5c49fa8d110d5fb854a21f = L.circleMarker(
+                [42.29409205, -83.7848648563127],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_d6b5d265cab146b388201e1f69dcd497 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1348c647d80d43b1ae27137087045c14 = $(`<div id="html_1348c647d80d43b1ae27137087045c14" style="width: 100.0%; height: 100.0%;">Abbot, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_d6b5d265cab146b388201e1f69dcd497.setContent(html_1348c647d80d43b1ae27137087045c14);
+            
+
+            circle_marker_2a6d53e3fc5c49fa8d110d5fb854a21f.bindPopup(popup_d6b5d265cab146b388201e1f69dcd497)
+            ;
+
+            
+        
+    
+            var circle_marker_82115c6358e34afb96aa42f149630b15 = L.circleMarker(
+                [42.282348, -83.772427],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_842ee54bd63e4014a6bd4f7163724538 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_94f6c2d6aae54ad58c7badcb3b5bbba7 = $(`<div id="html_94f6c2d6aae54ad58c7badcb3b5bbba7" style="width: 100.0%; height: 100.0%;">Allen, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_842ee54bd63e4014a6bd4f7163724538.setContent(html_94f6c2d6aae54ad58c7badcb3b5bbba7);
+            
+
+            circle_marker_82115c6358e34afb96aa42f149630b15.bindPopup(popup_842ee54bd63e4014a6bd4f7163724538)
+            ;
+
+            
+        
+    
+            var circle_marker_b5b0c36edb964d49a194349d01d47de1 = L.circleMarker(
+                [42.27447975, -83.7278109539221],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_f09b504d5fbe4715a7c1af0db8b1212f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_26a906fecf5243ee887ff94fe702581d = $(`<div id="html_26a906fecf5243ee887ff94fe702581d" style="width: 100.0%; height: 100.0%;">Angell, Ann Arbor, MI Cluster 0</div>`)[0];
+                popup_f09b504d5fbe4715a7c1af0db8b1212f.setContent(html_26a906fecf5243ee887ff94fe702581d);
+            
+
+            circle_marker_b5b0c36edb964d49a194349d01d47de1.bindPopup(popup_f09b504d5fbe4715a7c1af0db8b1212f)
+            ;
+
+            
+        
+    
+            var circle_marker_1153d4ff693c4a66950f0c8bae911511 = L.circleMarker(
+                [42.2890021, -83.7315807],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_63f5494cd8dd4f49a7359db5733877ba = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_36c2adca07c74891b2c96d3de623ed56 = $(`<div id="html_36c2adca07c74891b2c96d3de623ed56" style="width: 100.0%; height: 100.0%;">Bach, Ann Arbor, MI Cluster 6</div>`)[0];
+                popup_63f5494cd8dd4f49a7359db5733877ba.setContent(html_36c2adca07c74891b2c96d3de623ed56);
+            
+
+            circle_marker_1153d4ff693c4a66950f0c8bae911511.bindPopup(popup_63f5494cd8dd4f49a7359db5733877ba)
+            ;
+
+            
+        
+    
+            var circle_marker_5f9c118df8a84b07807bb7a8baf86f58 = L.circleMarker(
+                [42.267466, -83.7304341],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_ec18bc26b1e6486286b9593784899d1c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8ee2893d1b2c490bb33d2e76b2321884 = $(`<div id="html_8ee2893d1b2c490bb33d2e76b2321884" style="width: 100.0%; height: 100.0%;">Burns Park, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_ec18bc26b1e6486286b9593784899d1c.setContent(html_8ee2893d1b2c490bb33d2e76b2321884);
+            
+
+            circle_marker_5f9c118df8a84b07807bb7a8baf86f58.bindPopup(popup_ec18bc26b1e6486286b9593784899d1c)
+            ;
+
+            
+        
+    
+            var circle_marker_74161df939b44f8d9bc5f62b42cdb9b6 = L.circleMarker(
+                [42.245357, -83.682195],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_d316bf795a0a40bea6de553480de00a6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_497f7387872441139faa20b82598d258 = $(`<div id="html_497f7387872441139faa20b82598d258" style="width: 100.0%; height: 100.0%;">Carpenter, Ann Arbor, MI Cluster 1</div>`)[0];
+                popup_d316bf795a0a40bea6de553480de00a6.setContent(html_497f7387872441139faa20b82598d258);
+            
+
+            circle_marker_74161df939b44f8d9bc5f62b42cdb9b6.bindPopup(popup_d316bf795a0a40bea6de553480de00a6)
+            ;
+
+            
+        
+    
+            var circle_marker_f22c7f1067a9480089331731253f3288 = L.circleMarker(
+                [42.2572009, -83.7775570277379],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_ae71a0811d964e36becafeeef63fcad5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_de1d878c3de6419eb4a4879fd2d41c52 = $(`<div id="html_de1d878c3de6419eb4a4879fd2d41c52" style="width: 100.0%; height: 100.0%;">Dicken, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_ae71a0811d964e36becafeeef63fcad5.setContent(html_de1d878c3de6419eb4a4879fd2d41c52);
+            
+
+            circle_marker_f22c7f1067a9480089331731253f3288.bindPopup(popup_ae71a0811d964e36becafeeef63fcad5)
+            ;
+
+            
+        
+    
+            var circle_marker_360f9ecc3ac54857987befee810710ff = L.circleMarker(
+                [42.2764693, -83.7614836],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_8d9e103ad2404a18ab84c8bb0bed5bdc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fcc851534d8d4b50afc2fcad0b810e98 = $(`<div id="html_fcc851534d8d4b50afc2fcad0b810e98" style="width: 100.0%; height: 100.0%;">Eberwhite, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_8d9e103ad2404a18ab84c8bb0bed5bdc.setContent(html_fcc851534d8d4b50afc2fcad0b810e98);
+            
+
+            circle_marker_360f9ecc3ac54857987befee810710ff.bindPopup(popup_8d9e103ad2404a18ab84c8bb0bed5bdc)
+            ;
+
+            
+        
+    
+            var circle_marker_8dbe7e0763cd4d89b42904bc2a1a36c6 = L.circleMarker(
+                [42.289501, -83.779125],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_dd7fd1db18e347eea772159592497dc4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0f1fd6c550694db79f00048ffad2914f = $(`<div id="html_0f1fd6c550694db79f00048ffad2914f" style="width: 100.0%; height: 100.0%;">Haisley, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_dd7fd1db18e347eea772159592497dc4.setContent(html_0f1fd6c550694db79f00048ffad2914f);
+            
+
+            circle_marker_8dbe7e0763cd4d89b42904bc2a1a36c6.bindPopup(popup_dd7fd1db18e347eea772159592497dc4)
+            ;
+
+            
+        
+    
+            var circle_marker_ed518864c35d48a8a5a2424547b9e90f = L.circleMarker(
+                [42.2449558, -83.7248386],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_d0d950097e2b4bdc9f275afb68a68033 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0e2f22c4cc544fcb99fa3de58bddfe7d = $(`<div id="html_0e2f22c4cc544fcb99fa3de58bddfe7d" style="width: 100.0%; height: 100.0%;">King, Ann Arbor, MI Cluster 1</div>`)[0];
+                popup_d0d950097e2b4bdc9f275afb68a68033.setContent(html_0e2f22c4cc544fcb99fa3de58bddfe7d);
+            
+
+            circle_marker_ed518864c35d48a8a5a2424547b9e90f.bindPopup(popup_d0d950097e2b4bdc9f275afb68a68033)
+            ;
+
+            
+        
+    
+            var circle_marker_dcec536cba854187805ee43f262297aa = L.circleMarker(
+                [42.2767467, -83.7937879533477],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_873ae8b46d71485494a33e8f1a4e3c92 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fc3eecb019574d079ebdee0d000f8482 = $(`<div id="html_fc3eecb019574d079ebdee0d000f8482" style="width: 100.0%; height: 100.0%;">Lakewood, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_873ae8b46d71485494a33e8f1a4e3c92.setContent(html_fc3eecb019574d079ebdee0d000f8482);
+            
+
+            circle_marker_dcec536cba854187805ee43f262297aa.bindPopup(popup_873ae8b46d71485494a33e8f1a4e3c92)
+            ;
+
+            
+        
+    
+            var circle_marker_51f21e033e11449b94070f168b673ad4 = L.circleMarker(
+                [42.2543115, -83.7654794644345],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_978828204ab341b19fb13796b8bd3e27 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_16b441e521684849b5446813e288771b = $(`<div id="html_16b441e521684849b5446813e288771b" style="width: 100.0%; height: 100.0%;">Lawton, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_978828204ab341b19fb13796b8bd3e27.setContent(html_16b441e521684849b5446813e288771b);
+            
+
+            circle_marker_51f21e033e11449b94070f168b673ad4.bindPopup(popup_978828204ab341b19fb13796b8bd3e27)
+            ;
+
+            
+        
+    
+            var circle_marker_d2013c6ba6c54ddda96b5315f8a33345 = L.circleMarker(
+                [42.2804042, -83.7493436],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_d2fdf4a645b144dcb1b9551da8f4f082 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b4f11d3b03ab43199d39f7bd9f20fd6c = $(`<div id="html_b4f11d3b03ab43199d39f7bd9f20fd6c" style="width: 100.0%; height: 100.0%;">Logan, Ann Arbor, MI Cluster 1</div>`)[0];
+                popup_d2fdf4a645b144dcb1b9551da8f4f082.setContent(html_b4f11d3b03ab43199d39f7bd9f20fd6c);
+            
+
+            circle_marker_d2013c6ba6c54ddda96b5315f8a33345.bindPopup(popup_d2fdf4a645b144dcb1b9551da8f4f082)
+            ;
+
+            
+        
+    
+            var circle_marker_6b0ef118977e4e18992a887d4c604977 = L.circleMarker(
+                [42.28568525, -83.7217161937019],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_55efcd0505fc4a508d9a54b5c4faa037 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9a9d69cd35904f5b8e4062e6fbe5376b = $(`<div id="html_9a9d69cd35904f5b8e4062e6fbe5376b" style="width: 100.0%; height: 100.0%;">Mitchell, Ann Arbor, MI Cluster 6</div>`)[0];
+                popup_55efcd0505fc4a508d9a54b5c4faa037.setContent(html_9a9d69cd35904f5b8e4062e6fbe5376b);
+            
+
+            circle_marker_6b0ef118977e4e18992a887d4c604977.bindPopup(popup_55efcd0505fc4a508d9a54b5c4faa037)
+            ;
+
+            
+        
+    
+            var circle_marker_3ce6fa9b15a943648ca6b8dfedeeb453 = L.circleMarker(
+                [42.2681569, -83.7312291],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_c8b0b750435f415cbe132c6e8ce15ae4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e3fa7a9d2e3b4a2bbd46eea920c45650 = $(`<div id="html_e3fa7a9d2e3b4a2bbd46eea920c45650" style="width: 100.0%; height: 100.0%;">Northeast Area, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_c8b0b750435f415cbe132c6e8ce15ae4.setContent(html_e3fa7a9d2e3b4a2bbd46eea920c45650);
+            
+
+            circle_marker_3ce6fa9b15a943648ca6b8dfedeeb453.bindPopup(popup_c8b0b750435f415cbe132c6e8ce15ae4)
+            ;
+
+            
+        
+    
+            var circle_marker_ac3ca1f6ccd64e23a782962fd1a4186e = L.circleMarker(
+                [42.31443345, -83.7326773584844],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_4dd3f80f39f04bf9b4d109559dbb8a43 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c5dffa2893364c68b09d43e905a6f0c0 = $(`<div id="html_c5dffa2893364c68b09d43e905a6f0c0" style="width: 100.0%; height: 100.0%;">Northside, Ann Arbor, MI Cluster 1</div>`)[0];
+                popup_4dd3f80f39f04bf9b4d109559dbb8a43.setContent(html_c5dffa2893364c68b09d43e905a6f0c0);
+            
+
+            circle_marker_ac3ca1f6ccd64e23a782962fd1a4186e.bindPopup(popup_4dd3f80f39f04bf9b4d109559dbb8a43)
+            ;
+
+            
+        
+    
+            var circle_marker_d9a6a0bb837a4946b74dd299078ffcd4 = L.circleMarker(
+                [42.25010315, -83.6928538240164],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_1c0daf4ba68e499e92935de12602e6f4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_49888f8cfb39488cbf034888a774e13f = $(`<div id="html_49888f8cfb39488cbf034888a774e13f" style="width: 100.0%; height: 100.0%;">Pittsfield, Ann Arbor, MI Cluster 5</div>`)[0];
+                popup_1c0daf4ba68e499e92935de12602e6f4.setContent(html_49888f8cfb39488cbf034888a774e13f);
+            
+
+            circle_marker_d9a6a0bb837a4946b74dd299078ffcd4.bindPopup(popup_1c0daf4ba68e499e92935de12602e6f4)
+            ;
+
+            
+        
+    
+            var circle_marker_40c4a3327c1a4a94be14827550958c9b = L.circleMarker(
+                [42.2681569, -83.7312291],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_0ac910e6523345b4aa134628e75fd9fe = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_208fad9eb6df4347abfb64576699d8c4 = $(`<div id="html_208fad9eb6df4347abfb64576699d8c4" style="width: 100.0%; height: 100.0%;">Southeast Area, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_0ac910e6523345b4aa134628e75fd9fe.setContent(html_208fad9eb6df4347abfb64576699d8c4);
+            
+
+            circle_marker_40c4a3327c1a4a94be14827550958c9b.bindPopup(popup_0ac910e6523345b4aa134628e75fd9fe)
+            ;
+
+            
+        
+    
+            var circle_marker_91a3ff47eae14238b3bff05314b4baf8 = L.circleMarker(
+                [42.2681569, -83.7312291],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_3d6b93bd65b448278556302950e7fb36 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_94476df07644496b87a7317a7b3592a6 = $(`<div id="html_94476df07644496b87a7317a7b3592a6" style="width: 100.0%; height: 100.0%;">Southwest Area, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_3d6b93bd65b448278556302950e7fb36.setContent(html_94476df07644496b87a7317a7b3592a6);
+            
+
+            circle_marker_91a3ff47eae14238b3bff05314b4baf8.bindPopup(popup_3d6b93bd65b448278556302950e7fb36)
+            ;
+
+            
+        
+    
+            var circle_marker_0256e81b75e24e09b9f11464ca5536de = L.circleMarker(
+                [42.30662275, -83.70128409],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_8ee3a9c70cd14487ac369dc0a6ad690c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d371cc2343394c2a822161be5ba4b422 = $(`<div id="html_d371cc2343394c2a822161be5ba4b422" style="width: 100.0%; height: 100.0%;">Thurston, Ann Arbor, MI Cluster 1</div>`)[0];
+                popup_8ee3a9c70cd14487ac369dc0a6ad690c.setContent(html_d371cc2343394c2a822161be5ba4b422);
+            
+
+            circle_marker_0256e81b75e24e09b9f11464ca5536de.bindPopup(popup_8ee3a9c70cd14487ac369dc0a6ad690c)
+            ;
+
+            
+        
+    
+            var circle_marker_727e72eb03904128b4846f57bf4f8a5c = L.circleMarker(
+                [42.292429, -83.769656],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_e7f91278790946ae840e7f9784237b21 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b97b7361bd8d41bc9f57ff02a716da06 = $(`<div id="html_b97b7361bd8d41bc9f57ff02a716da06" style="width: 100.0%; height: 100.0%;">Wines, Ann Arbor, MI Cluster 2</div>`)[0];
+                popup_e7f91278790946ae840e7f9784237b21.setContent(html_b97b7361bd8d41bc9f57ff02a716da06);
+            
+
+            circle_marker_727e72eb03904128b4846f57bf4f8a5c.bindPopup(popup_e7f91278790946ae840e7f9784237b21)
+            ;
+
+            
+        
+    
+            var circle_marker_b67813867e1547d09af658f1f476a85a = L.circleMarker(
+                [41.94705, -87.6554287829005],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_a5396a14d09242e2ae1e8b57a59954f5);
+            
+    
+            var popup_44388023bf244b51aaf592a34e495116 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9a6fada82b2844058e5b620b6dec50f5 = $(`<div id="html_9a6fada82b2844058e5b620b6dec50f5" style="width: 100.0%; height: 100.0%;">LAKE VIEW, Chicago, IL Cluster 2</div>`)[0];
+                popup_44388023bf244b51aaf592a34e495116.setContent(html_9a6fada82b2844058e5b620b6dec50f5);
+            
+
+            circle_marker_b67813867e1547d09af658f1f476a85a.bindPopup(popup_44388023bf244b51aaf592a34e495116)
+            ;
+
+            
+        
+</script>
